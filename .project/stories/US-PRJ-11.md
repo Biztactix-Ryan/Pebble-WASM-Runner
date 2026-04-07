@@ -1,11 +1,15 @@
 ---
 acceptance_criteria:
-- buildPutBytesInit() constructs correct INIT message with object type size and index
-- buildPutBytesData() constructs correct DATA message with cookie and chunk payload
-- buildPutBytesCommit() constructs correct COMMIT message with CRC
+- buildPutBytesAppInit() constructs correct modern INIT with object type size and
+  app_id
+- buildPutBytesPut() constructs correct DATA message with cookie and chunk payload
+- buildPutBytesCommit() constructs correct COMMIT message with STM32 CRC-32
 - buildPutBytesAbort() constructs ABORT message
-- All messages use correct byte order and field sizes
-- CRC32 calculation implemented correctly
+- buildPutBytesInstall() constructs INSTALL message (5th command)
+- All messages use little-endian byte order
+- STM32 CRC-32 implemented correctly (polynomial 0x04C11DB7 no reflection MSB-first
+  4-byte words)
+- parsePutBytesResponse() extracts result (ACK=0x01 NACK=0x02) and cookie
 created: '2026-04-07'
 depends_on:
 - US-PRJ-10

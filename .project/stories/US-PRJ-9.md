@@ -1,13 +1,13 @@
 ---
 acceptance_criteria:
 - UUID encoded as 16-byte binary correctly
-- App name and company name encoded as fixed-length strings
-- Version major/minor encoded correctly
-- App flags (watchface vs app) set from manifest
-- SDK version included
-- Icon resource ID included
-- Output is an ArrayBuffer ready to send as protocol payload
-- Matches format expected by PebbleOS (verified against libpebble2 reference)
+- App name encoded as 96-char fixed string (null-padded)
+- Version major/minor and SDK version as Uint8 pairs
+- App flags (Uint32) set from manifest — watchface and worker flags
+- Icon resource ID (Uint32) included
+- app_face_bg_color and app_face_template_id included
+- Output is an ArrayBuffer matching AppMetadata layout from libpebble2/protocol/apps.py
+- Byte-comparison verified against libpebble2 reference output
 created: '2026-04-07'
 depends_on:
 - US-PRJ-7

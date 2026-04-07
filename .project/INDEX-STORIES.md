@@ -4,11 +4,11 @@
 | -- | ----- | ------ | -------- | ------ | ---- | ---- | --- | ----- |
 | [US-PRJ-1](stories/US-PRJ-1.md) | Understand FEED/BEEF control protocol internals | 🟢 ready | must | 3 | research, mvp | [EPIC-PRJ-1](epics/EPIC-PRJ-1.md) | 4 | 9 |
 | [US-PRJ-10](stories/US-PRJ-10.md) | Research PutBytes protocol from libpebble2 | 🟢 ready | must | 3 | research, mvp | [EPIC-PRJ-4](epics/EPIC-PRJ-4.md) | 6 | 12 |
-| [US-PRJ-11](stories/US-PRJ-11.md) | Implement PutBytes message construction in JS | 📋 backlog | must | 5 | mvp | [EPIC-PRJ-4](epics/EPIC-PRJ-4.md) | 6 | 18 |
+| [US-PRJ-11](stories/US-PRJ-11.md) | Implement PutBytes message construction in JS | 📋 backlog | must | 5 | mvp | [EPIC-PRJ-4](epics/EPIC-PRJ-4.md) | 8 | 18 |
 | [US-PRJ-12](stories/US-PRJ-12.md) | Implement PutBytes chunked transfer engine | 📋 backlog | must | 5 | mvp | [EPIC-PRJ-4](epics/EPIC-PRJ-4.md) | 8 | 19 |
 | [US-PRJ-13](stories/US-PRJ-13.md) | Research install sequence from libpebble2 | 🟢 ready | must | 3 | research, mvp | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 6 | 12 |
-| [US-PRJ-14](stories/US-PRJ-14.md) | Implement Pebble protocol message parser/builder | 📋 backlog | must | 5 | mvp | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 6 | 17 |
-| [US-PRJ-15](stories/US-PRJ-15.md) | Implement install flow orchestrator | 📋 backlog | must | 8 | mvp | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 10 | 26 |
+| [US-PRJ-14](stories/US-PRJ-14.md) | Implement Pebble protocol message parser/builder | 📋 backlog | must | 5 | mvp | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 7 | 17 |
+| [US-PRJ-15](stories/US-PRJ-15.md) | Implement install flow orchestrator | 📋 backlog | must | 8 | mvp | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 12 | 26 |
 | [US-PRJ-16](stories/US-PRJ-16.md) | End-to-end install test with real PBW | 📋 backlog | must | 3 | mvp, testing | [EPIC-PRJ-5](epics/EPIC-PRJ-5.md) | 6 | 13 |
 | [US-PRJ-17](stories/US-PRJ-17.md) | PBW upload and metadata display UI | 📋 backlog | must | 3 | mvp | [EPIC-PRJ-6](epics/EPIC-PRJ-6.md) | 5 | 12 |
 | [US-PRJ-18](stories/US-PRJ-18.md) | Install button with progress and status | 📋 backlog | must | 3 | mvp | [EPIC-PRJ-6](epics/EPIC-PRJ-6.md) | 6 | 15 |

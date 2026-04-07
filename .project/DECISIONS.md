@@ -17,23 +17,44 @@
 
 ---
 
-## ADR-002: Use FEED/BEEF control protocol as the JS↔emulator bridge
+## ADR-002: Use FEED/BEEF SPP protocol type as the JS-to-emulator bridge
 
-**Decision**: Extend the existing FEED/BEEF UART control protocol in pebble-qemu-wasm rather than building a new communication channel.
+**Decision**: Inject Pebble protocol packets via the SPP (Serial Port Profile) protocol type within the existing FEED/BEEF control channel, rather than building a new communication channel.
 
-**Context**: The QEMU Pebble emulator already has a control protocol over a virtual UART (`pebble_control.c`). We need a way for browser JS to send Pebble protocol packets into the emulator.
+**Context**: The QEMU Pebble emulator has a control protocol over a virtual UART (`pebble_control.c`) with 8 protocol types. SPP (type 0) carries raw Pebble protocol data and is already forwarded to the emulated UART. We need JS to send/receive Pebble protocol messages.
 
 **Rationale**:
-- Infrastructure already exists in the C codebase
+- SPP forwarding infrastructure already exists in pebble_control.c
 - Avoids adding new QEMU device types or shared memory regions
-- FEED/BEEF is already understood by the emulator
 - Just needs JS-callable wrappers exposed via Emscripten
+- Packet framing is well-defined: `0xFEED + proto_id + length + data + 0xBEEF`
 
 **Status**: Accepted — 2026-04-07
 
 ---
 
-## ADR-003: Minimal first milestone — app binary only
+## ADR-003: Target modern (v3+) install path, not legacy (v2)
+
+**Decision**: Implement the modern firmware (v3+) install path using BlobDB + AppFetch + PutBytesAppInit, not the legacy v2 bank-based path.
+
+**Context**: libpebble2/services/install.py has two install paths:
+- **Modern (v3+)**: BlobDB metadata insert → AppRunState → AppFetchRequest → PutBytesAppInit (app_id based)
+- **Legacy (v2)**: UUID notify → query banks → find free slot → PutBytesInit (bank based) → mark available
+
+The emulator firmware version determines which path is needed.
+
+**Rationale**:
+- The WASM emulator runs modern PebbleOS firmware (v3+/v4)
+- Modern path is cleaner — no bank slot management needed
+- Uses `PutBytesAppInit` with app_id instead of `PutBytesInit` with bank index
+- Legacy path only needed for v2 firmware which the emulator doesn't run
+- We still need BlobDB protocol support for metadata insertion
+
+**Status**: Accepted — 2026-04-07
+
+---
+
+## ADR-004: Minimal first milestone — app binary only
 
 **Decision**: First working version supports only app binary installation. Resources, worker binaries, uninstall, and advanced metadata are deferred.
 
@@ -48,7 +69,7 @@
 
 ---
 
-## ADR-004: Reference repos are read-only — we port, not fork
+## ADR-005: Reference repos are read-only — we port, not fork
 
 **Decision**: pebble-tool and libpebble2 are reference material only. We read their logic and port it to JS. We do not fork, modify, or include them as dependencies.
 
@@ -64,7 +85,7 @@
 
 ---
 
-## ADR-005: Build order — bridge first, UI last
+## ADR-006: Build order — bridge first, UI last
 
 **Decision**: Implementation order is: emulator bridge → PBW parser → metadata → PutBytes → installer → UI.
 
@@ -76,6 +97,23 @@
 - PutBytes and installer depend on the bridge
 - UI is last because everything can be tested via browser console first
 - This order minimizes blocked dependencies
+
+**Status**: Accepted — 2026-04-07
+
+---
+
+## ADR-007: Use STM32 CRC-32, not standard CRC32
+
+**Decision**: Implement the STM32-specific CRC-32 algorithm for PutBytes COMMIT messages, matching the implementation in `libpebble2/util/stm32_crc.py`.
+
+**Context**: PebbleOS uses STM32 hardware CRC which differs from standard CRC32. The differences are significant enough that standard CRC32 will cause install failures.
+
+**Rationale**:
+- STM32 CRC uses polynomial `0x04C11DB7` (same as standard)
+- BUT: no bit/byte reflection (MSB-first), processes in 4-byte word blocks
+- Standard CRC32 reflects both input and output — will produce wrong values
+- Must match exactly or PebbleOS will reject the COMMIT
+- Reference implementation: `libpebble2/util/stm32_crc.py`
 
 **Status**: Accepted — 2026-04-07
 

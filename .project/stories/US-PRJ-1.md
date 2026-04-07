@@ -20,6 +20,15 @@ updated: '2026-04-07'
 
 As a developer, I want to fully understand how the FEED/BEEF control protocol works in pebble_control.c so that I can extend it for JS-callable packet injection.
 
-Requires reading and documenting: packet framing format, UART device setup in pebble.c, how pebble_control.c handles incoming/outgoing data, and how Emscripten currently exposes (or doesn't expose) these interfaces.
+Key files to read in pebble-qemu-wasm (branch: main):
+- hw/arm/pebble_control.c — FEED/BEEF framing, 8 protocol types (SPP is type 0), packet forwarding to UART
+- hw/arm/pebble_control.h — control API: pebble_control_create(), pebble_control_send_vibe_notification()
+- hw/arm/pebble.c — UART creation, board configs (snowy/emery/s4), button input, STM32F439 init
+- build_wasm.sh — Docker-based build, Emscripten toolchain (exports NOT listed here)
+- scripts/patch_wasm.py — Emscripten flags, optimization, asyncify, TLB acceleration
+- web/index.html — existing JS API: display framebuffer, button state via Atomics, FS for firmware
 
-PREREQUISITE: US-PRJ-19 (Bootstrap source repositories) must complete first — this story reads files from pebble-qemu-wasm.
+CRITICAL: Pebble protocol data travels via SPP (protocol type 0) within FEED/BEEF frames. The packet format is:
+0xFEED (2B) + Protocol ID (2B) + Data Length (2B) + Payload + 0xBEEF (2B)
+
+PREREQUISITE: US-PRJ-19 (Bootstrap source repositories) must complete first.

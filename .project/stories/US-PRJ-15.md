@@ -1,15 +1,17 @@
 ---
 acceptance_criteria:
 - Takes parsed PBW object as input
-- Sends app metadata via AppFetch response
-- Handles slot request from PebbleOS
-- Sends app binary via PutBytes engine
-- Sends resources via PutBytes if present
-- Sends worker via PutBytes if present
+- Inserts AppMetadata into BlobDB (modern v3+ path)
+- Sends AppRunStateStart to trigger install flow
+- Handles AppFetchRequest from PebbleOS and responds with AppFetchResponse status=Start
+- PutBytes app binary via PutBytesAppInit (uses app_id not bank index)
+- PutBytes resources via PutBytesAppInit if present
+- PutBytes worker via PutBytesAppInit if present
+- Sends PutBytesInstall after each transfer
 - Detects and reports completion
 - Detects and reports errors at each phase
 - Emits progress events for UI consumption
-- Async API - returns promise that resolves on success or rejects on error
+- Async API returns promise
 created: '2026-04-07'
 depends_on:
 - US-PRJ-9
