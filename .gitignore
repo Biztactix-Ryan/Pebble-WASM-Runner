@@ -1,3 +1,16 @@
-# Cloned source repositories (managed separately)
-pebble-qemu-wasm/
+# Reference repositories (read-only, not part of this project)
 references/
+
+# Build artifacts and large binaries
+pebble-qemu-wasm/web/qemu-system-arm.wasm
+pebble-qemu-wasm/web/qemu-system-arm.js
+pebble-qemu-wasm/web/qemu-system-arm.worker.js
+pebble-qemu-wasm/web/firmware/
+pebble-qemu-wasm/node_modules/
+pebble-qemu-wasm/build/
+pebble-qemu-wasm/.playwright-mcp/
+pebble-qemu-wasm/htdocs/
+
+# Firmware binaries (large, downloaded separately)
+pebble-qemu-wasm/firmware/
+*.bin
