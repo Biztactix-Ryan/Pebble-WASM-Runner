@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:40:28.019418Z","outcome":"success","status":"done","note":"Mapped in INSTALL_SEQUENCE.md: manifest.json → app binary header → AppMetadata for BlobDB. Fields: uuid, flags, icon, versions, app_name.","actor":"Ryan Tregea"}

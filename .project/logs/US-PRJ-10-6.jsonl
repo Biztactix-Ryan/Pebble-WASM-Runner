@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:30.045086Z","outcome":"success","status":"done","note":"Verified: Cookie returned in INIT response, reused for all subsequent PUT/COMMIT/INSTALL/ABORT commands. Cookie is Uint32 assigned by firmware.","actor":"Ryan Tregea"}

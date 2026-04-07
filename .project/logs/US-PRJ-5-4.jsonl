@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:48:40.514308Z","outcome":"success","status":"done","note":"Uses file.arrayBuffer() and DataView — standard APIs in all modern browsers (Chrome, Firefox, Safari, Edge).","actor":"Ryan Tregea"}

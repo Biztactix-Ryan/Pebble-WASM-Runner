@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:50:53.505994Z","outcome":"success","status":"done","note":"Progress callback fires 3 times for 3-chunk transfer. Values verified: (2000,5000), (4000,5000), (5000,5000).","actor":"Ryan Tregea"}

@@ -17,7 +17,7 @@ epic_id: EPIC-PRJ-5
 id: US-PRJ-14
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Implement Pebble protocol message parser/builder

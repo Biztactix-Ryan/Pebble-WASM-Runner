@@ -10,7 +10,7 @@ epic_id: EPIC-PRJ-2
 id: US-PRJ-5
 points: 2
 priority: must
-status: ready
+status: done
 tags:
 - mvp
 title: Load PBW file via browser File API

@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:40:24.405543Z","outcome":"success","status":"done","note":"Documented in INSTALL_SEQUENCE.md: AppMetadata (LE, 128 bytes), app binary header (120 bytes), all with field/size/offset/endianness.","actor":"Ryan Tregea"}

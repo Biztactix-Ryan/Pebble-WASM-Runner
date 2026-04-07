@@ -12,7 +12,7 @@ epic_id: EPIC-PRJ-4
 id: US-PRJ-10
 points: 3
 priority: must
-status: ready
+status: done
 tags:
 - research
 - mvp

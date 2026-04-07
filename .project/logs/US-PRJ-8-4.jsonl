@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:40:30.008782Z","outcome":"success","status":"done","note":"Flags field is Uint32 from app binary header offset 96. Values are passed through directly from binary to AppMetadata.","actor":"Ryan Tregea"}

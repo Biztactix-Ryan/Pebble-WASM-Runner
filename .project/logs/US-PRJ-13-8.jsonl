@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:38.110628Z","outcome":"success","status":"done","note":"AppFetch documented: endpoint 0x1771, little-endian. Request: cmd(0x01)+uuid(16B)+app_id(int32 LE). Response: cmd(0x01)+status(Start=0x01/Busy=0x02/InvalidUUID=0x03/NoData=0x04).","actor":"Ryan Tregea"}

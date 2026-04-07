@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:48:33.905584Z","outcome":"success","status":"done","note":"Unit tests in lib/pbw-loader.test.mjs using Node.js File API. Tests valid ZIP, ArrayBuffer return, name/size preservation.","actor":"Ryan Tregea"}

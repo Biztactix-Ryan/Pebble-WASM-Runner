@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:22.597380Z","outcome":"success","status":"done","note":"Verified: PutBytesInit has object_size(Uint32)+object_type(Uint8)+bank(Uint8)+filename(NullTerminatedString). PutBytesAppInit has object_size(Uint32)+object_type(Uint8)+app_id(Uint32). All big-endian.","actor":"Ryan Tregea"}

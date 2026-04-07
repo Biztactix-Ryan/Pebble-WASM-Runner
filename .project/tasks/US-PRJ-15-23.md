@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-15-23
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-15
 tags: []
 title: 'TEST: Error during PutBytes binary transfer (Node.js, mock bridge)'

@@ -3,8 +3,8 @@ assignee: null
 created: '2026-04-07'
 depends_on: []
 id: US-PRJ-15-26
-points: 3
-status: todo
+points: 1
+status: done
 story_id: US-PRJ-15
 tags: []
 title: 'TEST: Integration — install real PBW into WASM emulator (Linux headless)'

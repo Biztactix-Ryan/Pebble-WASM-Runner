@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:55.259046Z","outcome":"success","status":"done","note":"Full sequence documented in docs/INSTALL_SEQUENCE.md: BlobDB insert → AppRunState Start → AppFetchRequest/Response → PutBytes (binary → resources → worker).","actor":"Ryan Tregea"}

@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:28.511141Z","outcome":"success","status":"done","note":"Verified: Firmware=1, Recovery=2, SystemResource=3, AppResource=4, AppExecutable=5, File=6, Worker=7. Modern app install sets bit 7 on object_type.","actor":"Ryan Tregea"}

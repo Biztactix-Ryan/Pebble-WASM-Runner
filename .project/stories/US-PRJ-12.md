@@ -16,7 +16,7 @@ epic_id: EPIC-PRJ-4
 id: US-PRJ-12
 points: 5
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Implement PutBytes chunked transfer engine

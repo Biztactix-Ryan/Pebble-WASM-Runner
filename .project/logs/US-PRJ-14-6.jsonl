@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:55:06.354299Z","outcome":"success","status":"done","note":"All parsers throw descriptive errors. Tested short buffers, invalid headers, incomplete frames.","actor":"Ryan Tregea"}

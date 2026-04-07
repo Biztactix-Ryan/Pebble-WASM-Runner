@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:50:44.338183Z","outcome":"success","status":"done","note":"Error handling: NACK at any stage throws PutBytesError with phase info. Automatic ABORT sent after any error post-INIT. Abort failures silently ignored.","actor":"Ryan Tregea"}

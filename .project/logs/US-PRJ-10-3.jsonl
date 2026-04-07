@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:26.078185Z","outcome":"success","status":"done","note":"Verified: PutBytesCommit = cookie(Uint32)+object_crc(Uint32). CRC is STM32 CRC-32: poly 0x04C11DB7, init 0xFFFFFFFF, no reflection, MSB-first, 4-byte word processing.","actor":"Ryan Tregea"}

@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-11-15
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-11
 tags: []
 title: 'TEST: DATA message construction with various chunk sizes (Node.js)'

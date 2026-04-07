@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-13-11
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-13
 tags: []
 title: Read pebble_tool/commands/install.py for command-level flow

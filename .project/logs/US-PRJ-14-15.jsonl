@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:54:55.833375Z","outcome":"success","status":"done","note":"AppFetch response byte layout tested: Start=[0x01,0x01], InvalidUUID=[0x01,0x03].","actor":"Ryan Tregea"}

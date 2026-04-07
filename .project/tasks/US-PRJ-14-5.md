@@ -3,8 +3,8 @@ assignee: null
 created: '2026-04-07'
 depends_on: []
 id: US-PRJ-14-5
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-PRJ-14
 tags: []
 title: 'Test: Protocol endpoint IDs defined as constants'

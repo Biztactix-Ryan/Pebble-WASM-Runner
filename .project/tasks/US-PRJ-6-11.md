@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-6-11
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-6
 tags: []
 title: 'TEST: Unit test extraction from known-good PBW fixtures (Node.js)'

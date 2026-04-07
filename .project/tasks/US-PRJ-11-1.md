@@ -3,8 +3,8 @@ assignee: null
 created: '2026-04-07'
 depends_on: []
 id: US-PRJ-11-1
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-PRJ-11
 tags: []
 title: 'Test: buildPutBytesInit() constructs correct INIT message with object type

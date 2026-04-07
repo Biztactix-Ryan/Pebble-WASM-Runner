@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:40.317831Z","outcome":"success","status":"done","note":"AppRunState documented: endpoint 0x0034, little-endian. Commands: Start(0x01)+uuid, Stop(0x02)+uuid, Request(0x03). Completion signaling: firmware sends AppFetchRequest when it needs binary; install completes after final PutBytes INSTALL ACK.","actor":"Ryan Tregea"}

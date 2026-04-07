@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:48:36.552571Z","outcome":"success","status":"done","note":"loadPbwFile accepts File objects. Input element accept=\".pbw\" is a UI concern handled at integration time.","actor":"Ryan Tregea"}

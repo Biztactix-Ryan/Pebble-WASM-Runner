@@ -12,7 +12,7 @@ epic_id: EPIC-PRJ-2
 id: US-PRJ-7
 points: 2
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Parse PBW manifest and build structured output

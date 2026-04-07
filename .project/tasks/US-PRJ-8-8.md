@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-8-8
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-8
 tags: []
 title: Create test vectors from libpebble2

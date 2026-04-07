@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:59:22.983816Z","outcome":"success","status":"done","note":"serialiseAppMetadata() in pebble-protocol.mjs encodes UUID as 16-byte binary correctly.","actor":"Ryan Tregea"}

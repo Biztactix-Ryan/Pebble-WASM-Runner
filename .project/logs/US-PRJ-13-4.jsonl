@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:59.960560Z","outcome":"success","status":"done","note":"Order confirmed from install.py:95-104: Binary first, then Resources (if present), then Worker (if present). All use PutBytesAppInit with same app_id.","actor":"Ryan Tregea"}

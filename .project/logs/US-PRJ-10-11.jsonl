@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:11.515353Z","outcome":"success","status":"done","note":"PutBytesResponse: result(Uint8, ACK=0x01/NACK=0x02) + cookie(Uint32). Endpoint 0xBEEF. NACK raises PutBytesError. Cookie from INIT response is used for all subsequent commands.","actor":"Ryan Tregea"}

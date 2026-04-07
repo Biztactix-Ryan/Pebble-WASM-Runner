@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-5-8
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-5
 tags: []
 title: 'TEST: Unit test rejection of non-PBW files (Node.js)'

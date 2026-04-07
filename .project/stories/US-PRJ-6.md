@@ -14,7 +14,7 @@ epic_id: EPIC-PRJ-2
 id: US-PRJ-6
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Unzip PBW and extract contents

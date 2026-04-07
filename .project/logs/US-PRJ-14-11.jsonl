@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:54:47.278057Z","outcome":"success","status":"done","note":"Modern path uses appId from AppFetchRequest (no bank assignment). BlobDB insert handles metadata. Legacy bank not needed for v3+.","actor":"Ryan Tregea"}

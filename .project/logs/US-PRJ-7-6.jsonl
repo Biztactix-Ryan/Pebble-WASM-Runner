@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:59:11.008668Z","outcome":"success","status":"done","note":"Manifest parser and field mapper implemented in parsePBW() - maps appinfo.json fields to structured output.","actor":"Ryan Tregea"}

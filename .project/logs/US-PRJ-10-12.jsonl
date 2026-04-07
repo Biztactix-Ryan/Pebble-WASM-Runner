@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:13.760554Z","outcome":"success","status":"done","note":"Test vectors derivable from source: STM32 CRC-32 poly=0x04C11DB7, init=0xFFFFFFFF, no reflection, MSB-first, 4-byte word processing. Pad final word with leading zeros if &lt;4 bytes.","actor":"Ryan Tregea"}

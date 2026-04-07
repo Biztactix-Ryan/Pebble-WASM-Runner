@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-9-16
 points: 2
-status: todo
+status: done
 story_id: US-PRJ-9
 tags: []
 title: 'TEST: Byte-comparison against libpebble2 reference output (Node.js)'

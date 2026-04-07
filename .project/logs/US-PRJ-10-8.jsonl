@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:26:07.445461Z","outcome":"success","status":"done","note":"PutBytesInit: object_size(Uint32) + object_type(Uint8) + bank(Uint8) + filename(NullTerminatedString). PutBytesAppInit (modern, bit7 set on type): object_size(Uint32) + object_type(Uint8) + app_id(Uint32). Command byte 0x01. Endpoint 0xBEEF.","actor":"Ryan Tregea"}

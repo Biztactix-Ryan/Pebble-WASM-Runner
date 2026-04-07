@@ -21,7 +21,7 @@ epic_id: EPIC-PRJ-5
 id: US-PRJ-15
 points: 8
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Implement install flow orchestrator

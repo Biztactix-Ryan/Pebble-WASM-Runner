@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:40:20.282037Z","outcome":"success","status":"done","note":"Binary layout documented in docs/INSTALL_SEQUENCE.md: AppMetadata (LE), app binary header (120 bytes), all field offsets and sizes.","actor":"Ryan Tregea"}

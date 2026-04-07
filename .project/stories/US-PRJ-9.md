@@ -16,7 +16,7 @@ epic_id: EPIC-PRJ-3
 id: US-PRJ-9
 points: 3
 priority: must
-status: backlog
+status: done
 tags:
 - mvp
 title: Implement manifest-to-metadata converter in JS

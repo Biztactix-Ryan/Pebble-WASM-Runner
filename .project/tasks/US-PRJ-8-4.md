@@ -3,8 +3,8 @@ assignee: null
 created: '2026-04-07'
 depends_on: []
 id: US-PRJ-8-4
-points: null
-status: todo
+points: 1
+status: done
 story_id: US-PRJ-8
 tags: []
 title: 'Test: Document app flag values and their meanings'

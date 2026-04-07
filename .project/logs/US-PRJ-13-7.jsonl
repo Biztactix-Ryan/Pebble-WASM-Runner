@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:36.359196Z","outcome":"success","status":"done","note":"Read install.py, blobdb.py, apps.py, blobdb protocol, bundle.py. Full modern install flow mapped: BlobDB insert → AppRunState Start → AppFetchRequest/Response → PutBytes (binary, resources, worker).","actor":"Ryan Tregea"}

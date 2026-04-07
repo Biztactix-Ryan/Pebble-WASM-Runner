@@ -50,7 +50,7 @@ entries:
 - id: US-PRJ-1
   title: Understand FEED/BEEF control protocol internals
   type: story
-  status: active
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-1
@@ -58,7 +58,7 @@ entries:
 - id: US-PRJ-10
   title: Research PutBytes protocol from libpebble2
   type: story
-  status: ready
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-4
@@ -66,7 +66,7 @@ entries:
 - id: US-PRJ-11
   title: Implement PutBytes message construction in JS
   type: story
-  status: backlog
+  status: done
   points: 5
   story_id: null
   epic_id: EPIC-PRJ-4
@@ -74,7 +74,7 @@ entries:
 - id: US-PRJ-12
   title: Implement PutBytes chunked transfer engine
   type: story
-  status: backlog
+  status: done
   points: 5
   story_id: null
   epic_id: EPIC-PRJ-4
@@ -82,7 +82,7 @@ entries:
 - id: US-PRJ-13
   title: Research install sequence from libpebble2
   type: story
-  status: ready
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-5
@@ -90,7 +90,7 @@ entries:
 - id: US-PRJ-14
   title: Implement Pebble protocol message parser/builder
   type: story
-  status: backlog
+  status: done
   points: 5
   story_id: null
   epic_id: EPIC-PRJ-5
@@ -98,7 +98,7 @@ entries:
 - id: US-PRJ-15
   title: Implement install flow orchestrator
   type: story
-  status: backlog
+  status: done
   points: 8
   story_id: null
   epic_id: EPIC-PRJ-5
@@ -162,7 +162,7 @@ entries:
 - id: US-PRJ-5
   title: Load PBW file via browser File API
   type: story
-  status: ready
+  status: done
   points: 2
   story_id: null
   epic_id: EPIC-PRJ-2
@@ -170,7 +170,7 @@ entries:
 - id: US-PRJ-6
   title: Unzip PBW and extract contents
   type: story
-  status: backlog
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-2
@@ -178,7 +178,7 @@ entries:
 - id: US-PRJ-7
   title: Parse PBW manifest and build structured output
   type: story
-  status: backlog
+  status: done
   points: 2
   story_id: null
   epic_id: EPIC-PRJ-2
@@ -186,7 +186,7 @@ entries:
 - id: US-PRJ-8
   title: Research libpebble2 app metadata format
   type: story
-  status: ready
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-3
@@ -194,7 +194,7 @@ entries:
 - id: US-PRJ-9
   title: Implement manifest-to-metadata converter in JS
   type: story
-  status: backlog
+  status: done
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-3
@@ -266,7 +266,7 @@ entries:
 - id: US-PRJ-1-9
   title: 'TEST: Verify spec against actual packet captures'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-1
   epic_id: null
@@ -274,15 +274,15 @@ entries:
 - id: US-PRJ-10-1
   title: 'Test: PutBytes INIT message format documented (fields sizes byte order)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-10
   title: Document PutBytes COMMIT and ABORT message formats
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -290,7 +290,7 @@ entries:
 - id: US-PRJ-10-11
   title: Document PutBytes ACK response format and error codes
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -298,7 +298,7 @@ entries:
 - id: US-PRJ-10-12
   title: Create PutBytes test vectors from libpebble2
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -306,47 +306,47 @@ entries:
 - id: US-PRJ-10-2
   title: 'Test: DATA message format and max chunk size documented'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-3
   title: 'Test: COMMIT message format and CRC algorithm identified'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-4
   title: 'Test: ACK response format and status codes documented'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-5
   title: 'Test: Object type codes listed (app binary resources worker file)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-6
   title: 'Test: Cookie/token handling understood'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-10
   epic_id: null
   tags: []
 - id: US-PRJ-10-7
   title: Read and annotate libpebble2/services/putbytes.py
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -354,7 +354,7 @@ entries:
 - id: US-PRJ-10-8
   title: Document PutBytes INIT message format
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -362,7 +362,7 @@ entries:
 - id: US-PRJ-10-9
   title: Document PutBytes DATA message format
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-10
   epic_id: null
@@ -371,15 +371,15 @@ entries:
   title: 'Test: buildPutBytesInit() constructs correct INIT message with object type
     size and index'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-10
   title: Implement buildPutBytesCommit(cookie, crc)
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -387,7 +387,7 @@ entries:
 - id: US-PRJ-11-11
   title: Implement buildPutBytesAbort(cookie)
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -395,7 +395,7 @@ entries:
 - id: US-PRJ-11-12
   title: Implement CRC32 calculation
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -403,7 +403,7 @@ entries:
 - id: US-PRJ-11-13
   title: Implement parsePutBytesAck(buffer)
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -411,7 +411,7 @@ entries:
 - id: US-PRJ-11-14
   title: 'TEST: INIT message byte layout matches spec (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -419,7 +419,7 @@ entries:
 - id: US-PRJ-11-15
   title: 'TEST: DATA message construction with various chunk sizes (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -427,7 +427,7 @@ entries:
 - id: US-PRJ-11-16
   title: 'TEST: CRC32 against known test vectors (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -435,7 +435,7 @@ entries:
 - id: US-PRJ-11-17
   title: 'TEST: ACK parsing for all status codes (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -444,7 +444,7 @@ entries:
   title: 'TEST: Byte-comparison of all message types against libpebble2 reference
     (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-11
   epic_id: null
@@ -453,47 +453,47 @@ entries:
   title: 'Test: buildPutBytesData() constructs correct DATA message with cookie and
     chunk payload'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-3
   title: 'Test: buildPutBytesCommit() constructs correct COMMIT message with CRC'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-4
   title: 'Test: buildPutBytesAbort() constructs ABORT message'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-5
   title: 'Test: All messages use correct byte order and field sizes'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-6
   title: 'Test: CRC32 calculation implemented correctly'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-11
   epic_id: null
   tags: []
 - id: US-PRJ-11-7
   title: Define PutBytes protocol constants
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -501,7 +501,7 @@ entries:
 - id: US-PRJ-11-8
   title: Implement buildPutBytesInit(objectType, objectSize, bankIndex)
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -509,7 +509,7 @@ entries:
 - id: US-PRJ-11-9
   title: Implement buildPutBytesData(cookie, chunkData)
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-11
   epic_id: null
@@ -517,15 +517,15 @@ entries:
 - id: US-PRJ-12-1
   title: 'Test: Accepts ArrayBuffer + object type + bank index as input'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-10
   title: Implement chunking logic
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -533,7 +533,7 @@ entries:
 - id: US-PRJ-12-11
   title: Implement ack waiting with timeout
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -541,7 +541,7 @@ entries:
 - id: US-PRJ-12-12
   title: Implement error handling and abort flow
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -549,7 +549,7 @@ entries:
 - id: US-PRJ-12-13
   title: Implement progress callback
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -557,7 +557,7 @@ entries:
 - id: US-PRJ-12-14
   title: 'TEST: Chunking logic in isolation (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -565,7 +565,7 @@ entries:
 - id: US-PRJ-12-15
   title: 'TEST: Full transfer sequence with mock bridge (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-12
   epic_id: null
@@ -573,7 +573,7 @@ entries:
 - id: US-PRJ-12-16
   title: 'TEST: Error ACK triggers abort (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -581,7 +581,7 @@ entries:
 - id: US-PRJ-12-17
   title: 'TEST: Timeout triggers abort (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -589,7 +589,7 @@ entries:
 - id: US-PRJ-12-18
   title: 'TEST: Progress callback fires correctly (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-12
   epic_id: null
@@ -605,63 +605,63 @@ entries:
 - id: US-PRJ-12-2
   title: 'Test: Sends INIT and waits for ack with cookie'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-3
   title: 'Test: Chunks data into appropriate size (2000 bytes default)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-4
   title: 'Test: Sends each DATA chunk and waits for ack'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-5
   title: 'Test: Sends COMMIT with CRC after all data'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-6
   title: 'Test: Handles error acks by aborting and reporting'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-7
   title: 'Test: Reports progress (bytes sent / total) via callback'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-8
   title: 'Test: Async/promise-based API for clean orchestration'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-12
   epic_id: null
   tags: []
 - id: US-PRJ-12-9
   title: Implement PutBytes transfer engine class
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-12
   epic_id: null
@@ -669,15 +669,15 @@ entries:
 - id: US-PRJ-13-1
   title: 'Test: Full install message sequence documented step by step'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-10
   title: Document AppRunState and completion signaling
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -685,7 +685,7 @@ entries:
 - id: US-PRJ-13-11
   title: Read pebble_tool/commands/install.py for command-level flow
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -693,7 +693,7 @@ entries:
 - id: US-PRJ-13-12
   title: Create install sequence diagram
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -701,47 +701,47 @@ entries:
 - id: US-PRJ-13-2
   title: 'Test: AppFetch request/response format documented'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-3
   title: 'Test: Install slot assignment protocol understood'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-4
   title: 'Test: Order of PutBytes transfers (binary then resources then worker) confirmed'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-5
   title: 'Test: Completion and error signaling mechanisms documented'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-6
   title: 'Test: AppRunState message format documented'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-13
   epic_id: null
   tags: []
 - id: US-PRJ-13-7
   title: Read and annotate libpebble2/services/install.py full install sequence
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -749,7 +749,7 @@ entries:
 - id: US-PRJ-13-8
   title: Document AppFetch request/response protocol
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -757,7 +757,7 @@ entries:
 - id: US-PRJ-13-9
   title: Document install slot assignment protocol
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-13
   epic_id: null
@@ -765,15 +765,15 @@ entries:
 - id: US-PRJ-14-1
   title: 'Test: Parse AppFetch request from emulator'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-10
   title: Implement AppFetch response builder
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -781,7 +781,7 @@ entries:
 - id: US-PRJ-14-11
   title: Implement install slot (PutBytes bank) assignment parser
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -789,7 +789,7 @@ entries:
 - id: US-PRJ-14-12
   title: Implement AppRunState message parser
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -797,7 +797,7 @@ entries:
 - id: US-PRJ-14-13
   title: 'TEST: Packet framing roundtrip (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -805,7 +805,7 @@ entries:
 - id: US-PRJ-14-14
   title: 'TEST: AppFetch request parsing from known bytes (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -813,7 +813,7 @@ entries:
 - id: US-PRJ-14-15
   title: 'TEST: AppFetch response byte layout matches reference (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -821,7 +821,7 @@ entries:
 - id: US-PRJ-14-16
   title: 'TEST: Unknown/malformed message handling (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -829,7 +829,7 @@ entries:
 - id: US-PRJ-14-17
   title: 'TEST: All protocol constants match libpebble2 values (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -837,47 +837,47 @@ entries:
 - id: US-PRJ-14-2
   title: 'Test: Build AppFetch response with app metadata'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-3
   title: 'Test: Parse install slot assignment'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-4
   title: 'Test: Build and parse AppRunState messages'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-5
   title: 'Test: Protocol endpoint IDs defined as constants'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-6
   title: 'Test: Message parsing handles unknown/unexpected messages gracefully'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-14
   epic_id: null
   tags: []
 - id: US-PRJ-14-7
   title: Define Pebble protocol endpoint ID constants
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -885,7 +885,7 @@ entries:
 - id: US-PRJ-14-8
   title: 'Implement generic Pebble protocol framing: buildPacket() and parsePacket()'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -893,7 +893,7 @@ entries:
 - id: US-PRJ-14-9
   title: Implement AppFetch request parser
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-14
   epic_id: null
@@ -901,8 +901,8 @@ entries:
 - id: US-PRJ-15-1
   title: 'Test: Takes parsed PBW object as input'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
@@ -910,15 +910,15 @@ entries:
   title: 'Test: Async API - returns promise that resolves on success or rejects on
     error'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-11
   title: Create PebbleInstaller class skeleton
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -926,7 +926,7 @@ entries:
 - id: US-PRJ-15-12
   title: Implement metadata send phase
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-15
   epic_id: null
@@ -934,7 +934,7 @@ entries:
 - id: US-PRJ-15-13
   title: Implement slot request handling
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -942,7 +942,7 @@ entries:
 - id: US-PRJ-15-14
   title: Wire PutBytes for app binary transfer
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -950,7 +950,7 @@ entries:
 - id: US-PRJ-15-15
   title: Wire PutBytes for resources transfer
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -958,7 +958,7 @@ entries:
 - id: US-PRJ-15-16
   title: Wire PutBytes for worker transfer
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -966,7 +966,7 @@ entries:
 - id: US-PRJ-15-17
   title: Implement completion detection
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -974,7 +974,7 @@ entries:
 - id: US-PRJ-15-18
   title: Implement error handling at each phase
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -982,7 +982,7 @@ entries:
 - id: US-PRJ-15-19
   title: Implement progress event emission
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -990,23 +990,23 @@ entries:
 - id: US-PRJ-15-2
   title: 'Test: Sends app metadata via AppFetch response'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-20
   title: "TEST: Full install with mock bridge \u2014 app only (Node.js)"
   type: task
-  status: todo
-  points: 2
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-21
   title: "TEST: Full install with mock bridge \u2014 app + resources + worker (Node.js)"
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -1014,7 +1014,7 @@ entries:
 - id: US-PRJ-15-22
   title: 'TEST: Error at metadata phase (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -1022,7 +1022,7 @@ entries:
 - id: US-PRJ-15-23
   title: 'TEST: Error during PutBytes binary transfer (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -1030,7 +1030,7 @@ entries:
 - id: US-PRJ-15-24
   title: 'TEST: Slot assignment timeout (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -1038,7 +1038,7 @@ entries:
 - id: US-PRJ-15-25
   title: 'TEST: Progress events fire in correct order (Node.js, mock bridge)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-15
   epic_id: null
@@ -1046,64 +1046,64 @@ entries:
 - id: US-PRJ-15-26
   title: "TEST: Integration \u2014 install real PBW into WASM emulator (Linux headless)"
   type: task
-  status: todo
-  points: 3
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-3
   title: 'Test: Handles slot request from PebbleOS'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-4
   title: 'Test: Sends app binary via PutBytes engine'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-5
   title: 'Test: Sends resources via PutBytes if present'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-6
   title: 'Test: Sends worker via PutBytes if present'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-7
   title: 'Test: Detects and reports completion'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-8
   title: 'Test: Detects and reports errors at each phase'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
 - id: US-PRJ-15-9
   title: 'Test: Emits progress events for UI consumption'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-15
   epic_id: null
   tags: []
@@ -1830,39 +1830,39 @@ entries:
 - id: US-PRJ-5-1
   title: 'Test: File input accepts .pbw files'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-5
   epic_id: null
   tags: []
 - id: US-PRJ-5-2
   title: 'Test: File is read as ArrayBuffer using FileReader API'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-5
   epic_id: null
   tags: []
 - id: US-PRJ-5-3
   title: 'Test: Handles missing or invalid file gracefully'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-5
   epic_id: null
   tags: []
 - id: US-PRJ-5-4
   title: 'Test: Works in all modern browsers'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-5
   epic_id: null
   tags: []
 - id: US-PRJ-5-5
   title: Create pbw-loader.js module with File API reader
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-5
   epic_id: null
@@ -1870,7 +1870,7 @@ entries:
 - id: US-PRJ-5-6
   title: 'Add file validation: zip magic byte check'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-5
   epic_id: null
@@ -1878,7 +1878,7 @@ entries:
 - id: US-PRJ-5-7
   title: 'TEST: Unit test file reading with mock File objects (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-5
   epic_id: null
@@ -1886,7 +1886,7 @@ entries:
 - id: US-PRJ-5-8
   title: 'TEST: Unit test rejection of non-PBW files (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-5
   epic_id: null
@@ -1894,15 +1894,15 @@ entries:
 - id: US-PRJ-6-1
   title: 'Test: JSZip library integrated'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-10
   title: Add error handling for malformed PBW bundles
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-6
   epic_id: null
@@ -1910,7 +1910,7 @@ entries:
 - id: US-PRJ-6-11
   title: 'TEST: Unit test extraction from known-good PBW fixtures (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-6
   epic_id: null
@@ -1918,7 +1918,7 @@ entries:
 - id: US-PRJ-6-12
   title: 'TEST: Unit test extraction of optional files (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-6
   epic_id: null
@@ -1926,7 +1926,7 @@ entries:
 - id: US-PRJ-6-13
   title: 'TEST: Unit test corrupt/invalid zip handling (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-6
   epic_id: null
@@ -1934,55 +1934,55 @@ entries:
 - id: US-PRJ-6-2
   title: 'Test: PBW zip contents are listed and accessible'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-3
   title: 'Test: appinfo.json is extracted and parsed as JSON'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-4
   title: 'Test: pebble-app.bin extracted as ArrayBuffer'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-5
   title: 'Test: app_resources.pbpack extracted as ArrayBuffer if present'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-6
   title: 'Test: worker.bin extracted as ArrayBuffer if present'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-7
   title: 'Test: Handles malformed or incomplete PBW files with clear errors'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-6
   epic_id: null
   tags: []
 - id: US-PRJ-6-8
   title: Integrate JSZip library
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-6
   epic_id: null
@@ -1990,7 +1990,7 @@ entries:
 - id: US-PRJ-6-9
   title: Implement PBW zip extraction logic
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-6
   epic_id: null
@@ -1999,15 +1999,15 @@ entries:
   title: 'Test: Output object contains: uuid name version companyName appBinary resourcesBinary
     workerBinary sdkVersion appFlags'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-7
   epic_id: null
   tags: []
 - id: US-PRJ-7-10
   title: 'TEST: Integration test with real PBW files end-to-end (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2015,31 +2015,31 @@ entries:
 - id: US-PRJ-7-2
   title: 'Test: Fields are null/undefined when not present in PBW'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-7
   epic_id: null
   tags: []
 - id: US-PRJ-7-3
   title: 'Test: UUID is validated as proper format'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-7
   epic_id: null
   tags: []
 - id: US-PRJ-7-4
   title: 'Test: Tested with multiple real PBW files'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-7
   epic_id: null
   tags: []
 - id: US-PRJ-7-5
   title: Define PBW output schema
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2047,7 +2047,7 @@ entries:
 - id: US-PRJ-7-6
   title: Implement manifest parser and field mapper
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2055,7 +2055,7 @@ entries:
 - id: US-PRJ-7-7
   title: Implement UUID validation
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2063,7 +2063,7 @@ entries:
 - id: US-PRJ-7-8
   title: 'TEST: Unit test parser with known manifest fixtures (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2071,7 +2071,7 @@ entries:
 - id: US-PRJ-7-9
   title: 'TEST: Unit test UUID validation (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-7
   epic_id: null
@@ -2079,39 +2079,39 @@ entries:
 - id: US-PRJ-8-1
   title: 'Test: Document exact metadata binary layout (fields sizes offsets byte order)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-8
   epic_id: null
   tags: []
 - id: US-PRJ-8-2
   title: 'Test: Identify all protocol message types involved (AppFetch etc.)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-8
   epic_id: null
   tags: []
 - id: US-PRJ-8-3
   title: 'Test: Map manifest JSON fields to protocol metadata fields'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-8
   epic_id: null
   tags: []
 - id: US-PRJ-8-4
   title: 'Test: Document app flag values and their meanings'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-8
   epic_id: null
   tags: []
 - id: US-PRJ-8-5
   title: Read and annotate libpebble2/services/install.py metadata handling
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-8
   epic_id: null
@@ -2119,7 +2119,7 @@ entries:
 - id: US-PRJ-8-6
   title: Read protocol definitions for AppFetch and related messages
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-8
   epic_id: null
@@ -2127,7 +2127,7 @@ entries:
 - id: US-PRJ-8-7
   title: Create binary layout reference document
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-8
   epic_id: null
@@ -2135,7 +2135,7 @@ entries:
 - id: US-PRJ-8-8
   title: Create test vectors from libpebble2
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-8
   epic_id: null
@@ -2143,7 +2143,7 @@ entries:
 - id: US-PRJ-8-9
   title: 'TEST: Validate test vectors against PebbleOS documentation'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-8
   epic_id: null
@@ -2151,15 +2151,15 @@ entries:
 - id: US-PRJ-9-1
   title: 'Test: UUID encoded as 16-byte binary correctly'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-10
   title: Implement fixed-length string encoder
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2167,7 +2167,7 @@ entries:
 - id: US-PRJ-9-11
   title: Implement version and SDK version encoder
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2175,7 +2175,7 @@ entries:
 - id: US-PRJ-9-12
   title: Implement app flags resolver
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2183,7 +2183,7 @@ entries:
 - id: US-PRJ-9-13
   title: Implement complete metadata buffer builder
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2191,7 +2191,7 @@ entries:
 - id: US-PRJ-9-14
   title: 'TEST: UUID encoding roundtrip (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2199,7 +2199,7 @@ entries:
 - id: US-PRJ-9-15
   title: 'TEST: String encoding padding and truncation (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2207,7 +2207,7 @@ entries:
 - id: US-PRJ-9-16
   title: 'TEST: Byte-comparison against libpebble2 reference output (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 2
   story_id: US-PRJ-9
   epic_id: null
@@ -2215,7 +2215,7 @@ entries:
 - id: US-PRJ-9-17
   title: 'TEST: Metadata for watchface vs app produces different flags (Node.js)'
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
@@ -2223,69 +2223,69 @@ entries:
 - id: US-PRJ-9-2
   title: 'Test: App name and company name encoded as fixed-length strings'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-3
   title: 'Test: Version major/minor encoded correctly'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-4
   title: 'Test: App flags (watchface vs app) set from manifest'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-5
   title: 'Test: SDK version included'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-6
   title: 'Test: Icon resource ID included'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-7
   title: 'Test: Output is an ArrayBuffer ready to send as protocol payload'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-8
   title: 'Test: Matches format expected by PebbleOS (verified against libpebble2 reference)'
   type: task
-  status: todo
-  points: null
+  status: done
+  points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
 - id: US-PRJ-9-9
   title: Implement UUID string-to-binary encoder
   type: task
-  status: todo
+  status: done
   points: 1
   story_id: US-PRJ-9
   epic_id: null
   tags: []
-total_points: 239
-completed_points: 21
+total_points: 305
+completed_points: 233
 story_count: 19
 task_count: 260
 epic_count: 6

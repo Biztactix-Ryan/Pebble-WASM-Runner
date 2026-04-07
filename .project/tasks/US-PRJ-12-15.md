@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-12-15
 points: 2
-status: todo
+status: done
 story_id: US-PRJ-12
 tags: []
 title: 'TEST: Full transfer sequence with mock bridge (Node.js)'

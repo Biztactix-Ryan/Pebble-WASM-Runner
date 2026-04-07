@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-9-17
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-9
 tags: []
 title: 'TEST: Metadata for watchface vs app produces different flags (Node.js)'

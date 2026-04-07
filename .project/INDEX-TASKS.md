@@ -10,111 +10,111 @@
 | [US-PRJ-1-6](tasks/US-PRJ-1-6.md) | Read and annotate pebble.c UART creation path | ✅ done | 1 |  | — | — | [US-PRJ-1](stories/US-PRJ-1.md) |
 | [US-PRJ-1-7](tasks/US-PRJ-1-7.md) | Map current Emscripten export surface | ✅ done | 1 |  | — | — | [US-PRJ-1](stories/US-PRJ-1.md) |
 | [US-PRJ-1-8](tasks/US-PRJ-1-8.md) | Write FEED/BEEF protocol specification document | ✅ done | 1 |  | — | — | [US-PRJ-1](stories/US-PRJ-1.md) |
-| [US-PRJ-1-9](tasks/US-PRJ-1-9.md) | TEST: Verify spec against actual packet captures | ⚪ todo | 1 |  | — | — | [US-PRJ-1](stories/US-PRJ-1.md) |
-| [US-PRJ-10-1](tasks/US-PRJ-10-1.md) | Test: PutBytes INIT message format documented (fields sizes byte order) | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-10](tasks/US-PRJ-10-10.md) | Document PutBytes COMMIT and ABORT message formats | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-11](tasks/US-PRJ-10-11.md) | Document PutBytes ACK response format and error codes | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-12](tasks/US-PRJ-10-12.md) | Create PutBytes test vectors from libpebble2 | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-2](tasks/US-PRJ-10-2.md) | Test: DATA message format and max chunk size documented | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-3](tasks/US-PRJ-10-3.md) | Test: COMMIT message format and CRC algorithm identified | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-4](tasks/US-PRJ-10-4.md) | Test: ACK response format and status codes documented | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-5](tasks/US-PRJ-10-5.md) | Test: Object type codes listed (app binary resources worker file) | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-6](tasks/US-PRJ-10-6.md) | Test: Cookie/token handling understood | ⚪ todo | — |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-7](tasks/US-PRJ-10-7.md) | Read and annotate libpebble2/services/putbytes.py | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-8](tasks/US-PRJ-10-8.md) | Document PutBytes INIT message format | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-10-9](tasks/US-PRJ-10-9.md) | Document PutBytes DATA message format | ⚪ todo | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
-| [US-PRJ-11-1](tasks/US-PRJ-11-1.md) | Test: buildPutBytesInit() constructs correct INIT message with object type size and index | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-10](tasks/US-PRJ-11-10.md) | Implement buildPutBytesCommit(cookie, crc) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-11](tasks/US-PRJ-11-11.md) | Implement buildPutBytesAbort(cookie) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-12](tasks/US-PRJ-11-12.md) | Implement CRC32 calculation | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-13](tasks/US-PRJ-11-13.md) | Implement parsePutBytesAck(buffer) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-14](tasks/US-PRJ-11-14.md) | TEST: INIT message byte layout matches spec (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-15](tasks/US-PRJ-11-15.md) | TEST: DATA message construction with various chunk sizes (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-16](tasks/US-PRJ-11-16.md) | TEST: CRC32 against known test vectors (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-17](tasks/US-PRJ-11-17.md) | TEST: ACK parsing for all status codes (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-18](tasks/US-PRJ-11-18.md) | TEST: Byte-comparison of all message types against libpebble2 reference (Node.js) | ⚪ todo | 2 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-2](tasks/US-PRJ-11-2.md) | Test: buildPutBytesData() constructs correct DATA message with cookie and chunk payload | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-3](tasks/US-PRJ-11-3.md) | Test: buildPutBytesCommit() constructs correct COMMIT message with CRC | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-4](tasks/US-PRJ-11-4.md) | Test: buildPutBytesAbort() constructs ABORT message | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-5](tasks/US-PRJ-11-5.md) | Test: All messages use correct byte order and field sizes | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-6](tasks/US-PRJ-11-6.md) | Test: CRC32 calculation implemented correctly | ⚪ todo | — |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-7](tasks/US-PRJ-11-7.md) | Define PutBytes protocol constants | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-8](tasks/US-PRJ-11-8.md) | Implement buildPutBytesInit(objectType, objectSize, bankIndex) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-11-9](tasks/US-PRJ-11-9.md) | Implement buildPutBytesData(cookie, chunkData) | ⚪ todo | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
-| [US-PRJ-12-1](tasks/US-PRJ-12-1.md) | Test: Accepts ArrayBuffer + object type + bank index as input | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-10](tasks/US-PRJ-12-10.md) | Implement chunking logic | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-11](tasks/US-PRJ-12-11.md) | Implement ack waiting with timeout | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-12](tasks/US-PRJ-12-12.md) | Implement error handling and abort flow | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-13](tasks/US-PRJ-12-13.md) | Implement progress callback | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-14](tasks/US-PRJ-12-14.md) | TEST: Chunking logic in isolation (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-15](tasks/US-PRJ-12-15.md) | TEST: Full transfer sequence with mock bridge (Node.js) | ⚪ todo | 2 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-16](tasks/US-PRJ-12-16.md) | TEST: Error ACK triggers abort (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-17](tasks/US-PRJ-12-17.md) | TEST: Timeout triggers abort (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-18](tasks/US-PRJ-12-18.md) | TEST: Progress callback fires correctly (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-1-9](tasks/US-PRJ-1-9.md) | TEST: Verify spec against actual packet captures | ✅ done | 1 |  | — | — | [US-PRJ-1](stories/US-PRJ-1.md) |
+| [US-PRJ-10-1](tasks/US-PRJ-10-1.md) | Test: PutBytes INIT message format documented (fields sizes byte order) | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-10](tasks/US-PRJ-10-10.md) | Document PutBytes COMMIT and ABORT message formats | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-11](tasks/US-PRJ-10-11.md) | Document PutBytes ACK response format and error codes | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-12](tasks/US-PRJ-10-12.md) | Create PutBytes test vectors from libpebble2 | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-2](tasks/US-PRJ-10-2.md) | Test: DATA message format and max chunk size documented | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-3](tasks/US-PRJ-10-3.md) | Test: COMMIT message format and CRC algorithm identified | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-4](tasks/US-PRJ-10-4.md) | Test: ACK response format and status codes documented | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-5](tasks/US-PRJ-10-5.md) | Test: Object type codes listed (app binary resources worker file) | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-6](tasks/US-PRJ-10-6.md) | Test: Cookie/token handling understood | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-7](tasks/US-PRJ-10-7.md) | Read and annotate libpebble2/services/putbytes.py | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-8](tasks/US-PRJ-10-8.md) | Document PutBytes INIT message format | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-10-9](tasks/US-PRJ-10-9.md) | Document PutBytes DATA message format | ✅ done | 1 |  | — | — | [US-PRJ-10](stories/US-PRJ-10.md) |
+| [US-PRJ-11-1](tasks/US-PRJ-11-1.md) | Test: buildPutBytesInit() constructs correct INIT message with object type size and index | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-10](tasks/US-PRJ-11-10.md) | Implement buildPutBytesCommit(cookie, crc) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-11](tasks/US-PRJ-11-11.md) | Implement buildPutBytesAbort(cookie) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-12](tasks/US-PRJ-11-12.md) | Implement CRC32 calculation | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-13](tasks/US-PRJ-11-13.md) | Implement parsePutBytesAck(buffer) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-14](tasks/US-PRJ-11-14.md) | TEST: INIT message byte layout matches spec (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-15](tasks/US-PRJ-11-15.md) | TEST: DATA message construction with various chunk sizes (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-16](tasks/US-PRJ-11-16.md) | TEST: CRC32 against known test vectors (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-17](tasks/US-PRJ-11-17.md) | TEST: ACK parsing for all status codes (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-18](tasks/US-PRJ-11-18.md) | TEST: Byte-comparison of all message types against libpebble2 reference (Node.js) | ✅ done | 2 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-2](tasks/US-PRJ-11-2.md) | Test: buildPutBytesData() constructs correct DATA message with cookie and chunk payload | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-3](tasks/US-PRJ-11-3.md) | Test: buildPutBytesCommit() constructs correct COMMIT message with CRC | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-4](tasks/US-PRJ-11-4.md) | Test: buildPutBytesAbort() constructs ABORT message | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-5](tasks/US-PRJ-11-5.md) | Test: All messages use correct byte order and field sizes | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-6](tasks/US-PRJ-11-6.md) | Test: CRC32 calculation implemented correctly | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-7](tasks/US-PRJ-11-7.md) | Define PutBytes protocol constants | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-8](tasks/US-PRJ-11-8.md) | Implement buildPutBytesInit(objectType, objectSize, bankIndex) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-11-9](tasks/US-PRJ-11-9.md) | Implement buildPutBytesData(cookie, chunkData) | ✅ done | 1 |  | — | — | [US-PRJ-11](stories/US-PRJ-11.md) |
+| [US-PRJ-12-1](tasks/US-PRJ-12-1.md) | Test: Accepts ArrayBuffer + object type + bank index as input | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-10](tasks/US-PRJ-12-10.md) | Implement chunking logic | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-11](tasks/US-PRJ-12-11.md) | Implement ack waiting with timeout | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-12](tasks/US-PRJ-12-12.md) | Implement error handling and abort flow | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-13](tasks/US-PRJ-12-13.md) | Implement progress callback | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-14](tasks/US-PRJ-12-14.md) | TEST: Chunking logic in isolation (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-15](tasks/US-PRJ-12-15.md) | TEST: Full transfer sequence with mock bridge (Node.js) | ✅ done | 2 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-16](tasks/US-PRJ-12-16.md) | TEST: Error ACK triggers abort (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-17](tasks/US-PRJ-12-17.md) | TEST: Timeout triggers abort (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-18](tasks/US-PRJ-12-18.md) | TEST: Progress callback fires correctly (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
 | [US-PRJ-12-19](tasks/US-PRJ-12-19.md) | TEST: Integration — PutBytes transfer to WASM emulator (Linux headless) | ⚪ todo | 2 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-2](tasks/US-PRJ-12-2.md) | Test: Sends INIT and waits for ack with cookie | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-3](tasks/US-PRJ-12-3.md) | Test: Chunks data into appropriate size (2000 bytes default) | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-4](tasks/US-PRJ-12-4.md) | Test: Sends each DATA chunk and waits for ack | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-5](tasks/US-PRJ-12-5.md) | Test: Sends COMMIT with CRC after all data | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-6](tasks/US-PRJ-12-6.md) | Test: Handles error acks by aborting and reporting | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-7](tasks/US-PRJ-12-7.md) | Test: Reports progress (bytes sent / total) via callback | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-8](tasks/US-PRJ-12-8.md) | Test: Async/promise-based API for clean orchestration | ⚪ todo | — |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-12-9](tasks/US-PRJ-12-9.md) | Implement PutBytes transfer engine class | ⚪ todo | 2 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
-| [US-PRJ-13-1](tasks/US-PRJ-13-1.md) | Test: Full install message sequence documented step by step | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-10](tasks/US-PRJ-13-10.md) | Document AppRunState and completion signaling | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-11](tasks/US-PRJ-13-11.md) | Read pebble_tool/commands/install.py for command-level flow | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-12](tasks/US-PRJ-13-12.md) | Create install sequence diagram | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-2](tasks/US-PRJ-13-2.md) | Test: AppFetch request/response format documented | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-3](tasks/US-PRJ-13-3.md) | Test: Install slot assignment protocol understood | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-4](tasks/US-PRJ-13-4.md) | Test: Order of PutBytes transfers (binary then resources then worker) confirmed | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-5](tasks/US-PRJ-13-5.md) | Test: Completion and error signaling mechanisms documented | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-6](tasks/US-PRJ-13-6.md) | Test: AppRunState message format documented | ⚪ todo | — |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-7](tasks/US-PRJ-13-7.md) | Read and annotate libpebble2/services/install.py full install sequence | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-8](tasks/US-PRJ-13-8.md) | Document AppFetch request/response protocol | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-13-9](tasks/US-PRJ-13-9.md) | Document install slot assignment protocol | ⚪ todo | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
-| [US-PRJ-14-1](tasks/US-PRJ-14-1.md) | Test: Parse AppFetch request from emulator | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-10](tasks/US-PRJ-14-10.md) | Implement AppFetch response builder | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-11](tasks/US-PRJ-14-11.md) | Implement install slot (PutBytes bank) assignment parser | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-12](tasks/US-PRJ-14-12.md) | Implement AppRunState message parser | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-13](tasks/US-PRJ-14-13.md) | TEST: Packet framing roundtrip (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-14](tasks/US-PRJ-14-14.md) | TEST: AppFetch request parsing from known bytes (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-15](tasks/US-PRJ-14-15.md) | TEST: AppFetch response byte layout matches reference (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-16](tasks/US-PRJ-14-16.md) | TEST: Unknown/malformed message handling (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-17](tasks/US-PRJ-14-17.md) | TEST: All protocol constants match libpebble2 values (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-2](tasks/US-PRJ-14-2.md) | Test: Build AppFetch response with app metadata | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-3](tasks/US-PRJ-14-3.md) | Test: Parse install slot assignment | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-4](tasks/US-PRJ-14-4.md) | Test: Build and parse AppRunState messages | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-5](tasks/US-PRJ-14-5.md) | Test: Protocol endpoint IDs defined as constants | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-6](tasks/US-PRJ-14-6.md) | Test: Message parsing handles unknown/unexpected messages gracefully | ⚪ todo | — |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-7](tasks/US-PRJ-14-7.md) | Define Pebble protocol endpoint ID constants | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-8](tasks/US-PRJ-14-8.md) | Implement generic Pebble protocol framing: buildPacket() and parsePacket() | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-14-9](tasks/US-PRJ-14-9.md) | Implement AppFetch request parser | ⚪ todo | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
-| [US-PRJ-15-1](tasks/US-PRJ-15-1.md) | Test: Takes parsed PBW object as input | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-10](tasks/US-PRJ-15-10.md) | Test: Async API - returns promise that resolves on success or rejects on error | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-11](tasks/US-PRJ-15-11.md) | Create PebbleInstaller class skeleton | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-12](tasks/US-PRJ-15-12.md) | Implement metadata send phase | ⚪ todo | 2 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-13](tasks/US-PRJ-15-13.md) | Implement slot request handling | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-14](tasks/US-PRJ-15-14.md) | Wire PutBytes for app binary transfer | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-15](tasks/US-PRJ-15-15.md) | Wire PutBytes for resources transfer | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-16](tasks/US-PRJ-15-16.md) | Wire PutBytes for worker transfer | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-17](tasks/US-PRJ-15-17.md) | Implement completion detection | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-18](tasks/US-PRJ-15-18.md) | Implement error handling at each phase | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-19](tasks/US-PRJ-15-19.md) | Implement progress event emission | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-2](tasks/US-PRJ-15-2.md) | Test: Sends app metadata via AppFetch response | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-20](tasks/US-PRJ-15-20.md) | TEST: Full install with mock bridge — app only (Node.js) | ⚪ todo | 2 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-21](tasks/US-PRJ-15-21.md) | TEST: Full install with mock bridge — app + resources + worker (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-22](tasks/US-PRJ-15-22.md) | TEST: Error at metadata phase (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-23](tasks/US-PRJ-15-23.md) | TEST: Error during PutBytes binary transfer (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-24](tasks/US-PRJ-15-24.md) | TEST: Slot assignment timeout (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-25](tasks/US-PRJ-15-25.md) | TEST: Progress events fire in correct order (Node.js, mock bridge) | ⚪ todo | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-26](tasks/US-PRJ-15-26.md) | TEST: Integration — install real PBW into WASM emulator (Linux headless) | ⚪ todo | 3 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-3](tasks/US-PRJ-15-3.md) | Test: Handles slot request from PebbleOS | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-4](tasks/US-PRJ-15-4.md) | Test: Sends app binary via PutBytes engine | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-5](tasks/US-PRJ-15-5.md) | Test: Sends resources via PutBytes if present | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-6](tasks/US-PRJ-15-6.md) | Test: Sends worker via PutBytes if present | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-7](tasks/US-PRJ-15-7.md) | Test: Detects and reports completion | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-8](tasks/US-PRJ-15-8.md) | Test: Detects and reports errors at each phase | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
-| [US-PRJ-15-9](tasks/US-PRJ-15-9.md) | Test: Emits progress events for UI consumption | ⚪ todo | — |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-12-2](tasks/US-PRJ-12-2.md) | Test: Sends INIT and waits for ack with cookie | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-3](tasks/US-PRJ-12-3.md) | Test: Chunks data into appropriate size (2000 bytes default) | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-4](tasks/US-PRJ-12-4.md) | Test: Sends each DATA chunk and waits for ack | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-5](tasks/US-PRJ-12-5.md) | Test: Sends COMMIT with CRC after all data | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-6](tasks/US-PRJ-12-6.md) | Test: Handles error acks by aborting and reporting | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-7](tasks/US-PRJ-12-7.md) | Test: Reports progress (bytes sent / total) via callback | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-8](tasks/US-PRJ-12-8.md) | Test: Async/promise-based API for clean orchestration | ✅ done | 1 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-12-9](tasks/US-PRJ-12-9.md) | Implement PutBytes transfer engine class | ✅ done | 2 |  | — | — | [US-PRJ-12](stories/US-PRJ-12.md) |
+| [US-PRJ-13-1](tasks/US-PRJ-13-1.md) | Test: Full install message sequence documented step by step | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-10](tasks/US-PRJ-13-10.md) | Document AppRunState and completion signaling | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-11](tasks/US-PRJ-13-11.md) | Read pebble_tool/commands/install.py for command-level flow | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-12](tasks/US-PRJ-13-12.md) | Create install sequence diagram | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-2](tasks/US-PRJ-13-2.md) | Test: AppFetch request/response format documented | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-3](tasks/US-PRJ-13-3.md) | Test: Install slot assignment protocol understood | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-4](tasks/US-PRJ-13-4.md) | Test: Order of PutBytes transfers (binary then resources then worker) confirmed | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-5](tasks/US-PRJ-13-5.md) | Test: Completion and error signaling mechanisms documented | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-6](tasks/US-PRJ-13-6.md) | Test: AppRunState message format documented | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-7](tasks/US-PRJ-13-7.md) | Read and annotate libpebble2/services/install.py full install sequence | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-8](tasks/US-PRJ-13-8.md) | Document AppFetch request/response protocol | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-13-9](tasks/US-PRJ-13-9.md) | Document install slot assignment protocol | ✅ done | 1 |  | — | — | [US-PRJ-13](stories/US-PRJ-13.md) |
+| [US-PRJ-14-1](tasks/US-PRJ-14-1.md) | Test: Parse AppFetch request from emulator | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-10](tasks/US-PRJ-14-10.md) | Implement AppFetch response builder | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-11](tasks/US-PRJ-14-11.md) | Implement install slot (PutBytes bank) assignment parser | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-12](tasks/US-PRJ-14-12.md) | Implement AppRunState message parser | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-13](tasks/US-PRJ-14-13.md) | TEST: Packet framing roundtrip (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-14](tasks/US-PRJ-14-14.md) | TEST: AppFetch request parsing from known bytes (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-15](tasks/US-PRJ-14-15.md) | TEST: AppFetch response byte layout matches reference (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-16](tasks/US-PRJ-14-16.md) | TEST: Unknown/malformed message handling (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-17](tasks/US-PRJ-14-17.md) | TEST: All protocol constants match libpebble2 values (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-2](tasks/US-PRJ-14-2.md) | Test: Build AppFetch response with app metadata | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-3](tasks/US-PRJ-14-3.md) | Test: Parse install slot assignment | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-4](tasks/US-PRJ-14-4.md) | Test: Build and parse AppRunState messages | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-5](tasks/US-PRJ-14-5.md) | Test: Protocol endpoint IDs defined as constants | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-6](tasks/US-PRJ-14-6.md) | Test: Message parsing handles unknown/unexpected messages gracefully | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-7](tasks/US-PRJ-14-7.md) | Define Pebble protocol endpoint ID constants | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-8](tasks/US-PRJ-14-8.md) | Implement generic Pebble protocol framing: buildPacket() and parsePacket() | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-14-9](tasks/US-PRJ-14-9.md) | Implement AppFetch request parser | ✅ done | 1 |  | — | — | [US-PRJ-14](stories/US-PRJ-14.md) |
+| [US-PRJ-15-1](tasks/US-PRJ-15-1.md) | Test: Takes parsed PBW object as input | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-10](tasks/US-PRJ-15-10.md) | Test: Async API - returns promise that resolves on success or rejects on error | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-11](tasks/US-PRJ-15-11.md) | Create PebbleInstaller class skeleton | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-12](tasks/US-PRJ-15-12.md) | Implement metadata send phase | ✅ done | 2 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-13](tasks/US-PRJ-15-13.md) | Implement slot request handling | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-14](tasks/US-PRJ-15-14.md) | Wire PutBytes for app binary transfer | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-15](tasks/US-PRJ-15-15.md) | Wire PutBytes for resources transfer | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-16](tasks/US-PRJ-15-16.md) | Wire PutBytes for worker transfer | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-17](tasks/US-PRJ-15-17.md) | Implement completion detection | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-18](tasks/US-PRJ-15-18.md) | Implement error handling at each phase | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-19](tasks/US-PRJ-15-19.md) | Implement progress event emission | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-2](tasks/US-PRJ-15-2.md) | Test: Sends app metadata via AppFetch response | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-20](tasks/US-PRJ-15-20.md) | TEST: Full install with mock bridge — app only (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-21](tasks/US-PRJ-15-21.md) | TEST: Full install with mock bridge — app + resources + worker (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-22](tasks/US-PRJ-15-22.md) | TEST: Error at metadata phase (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-23](tasks/US-PRJ-15-23.md) | TEST: Error during PutBytes binary transfer (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-24](tasks/US-PRJ-15-24.md) | TEST: Slot assignment timeout (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-25](tasks/US-PRJ-15-25.md) | TEST: Progress events fire in correct order (Node.js, mock bridge) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-26](tasks/US-PRJ-15-26.md) | TEST: Integration — install real PBW into WASM emulator (Linux headless) | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-3](tasks/US-PRJ-15-3.md) | Test: Handles slot request from PebbleOS | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-4](tasks/US-PRJ-15-4.md) | Test: Sends app binary via PutBytes engine | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-5](tasks/US-PRJ-15-5.md) | Test: Sends resources via PutBytes if present | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-6](tasks/US-PRJ-15-6.md) | Test: Sends worker via PutBytes if present | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-7](tasks/US-PRJ-15-7.md) | Test: Detects and reports completion | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-8](tasks/US-PRJ-15-8.md) | Test: Detects and reports errors at each phase | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
+| [US-PRJ-15-9](tasks/US-PRJ-15-9.md) | Test: Emits progress events for UI consumption | ✅ done | 1 |  | — | — | [US-PRJ-15](stories/US-PRJ-15.md) |
 | [US-PRJ-16-1](tasks/US-PRJ-16-1.md) | Test: Upload a known-good .pbw file | ⚪ todo | — |  | — | — | [US-PRJ-16](stories/US-PRJ-16.md) |
 | [US-PRJ-16-10](tasks/US-PRJ-16-10.md) | TEST: E2E app install and verify running | ⚪ todo | 1 |  | — | — | [US-PRJ-16](stories/US-PRJ-16.md) |
 | [US-PRJ-16-11](tasks/US-PRJ-16-11.md) | TEST: E2E app with resources install | ⚪ todo | 1 |  | — | — | [US-PRJ-16](stories/US-PRJ-16.md) |
@@ -205,60 +205,60 @@
 | [US-PRJ-4-7](tasks/US-PRJ-4-7.md) | Document bridge API for downstream consumers | ⚪ todo | 1 |  | — | — | [US-PRJ-4](stories/US-PRJ-4.md) |
 | [US-PRJ-4-8](tasks/US-PRJ-4-8.md) | TEST: Bidirectional packet integrity verification | ⚪ todo | 1 |  | — | — | [US-PRJ-4](stories/US-PRJ-4.md) |
 | [US-PRJ-4-9](tasks/US-PRJ-4-9.md) | TEST: Rapid packet stress test | ⚪ todo | 1 |  | — | — | [US-PRJ-4](stories/US-PRJ-4.md) |
-| [US-PRJ-5-1](tasks/US-PRJ-5-1.md) | Test: File input accepts .pbw files | ⚪ todo | — |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-2](tasks/US-PRJ-5-2.md) | Test: File is read as ArrayBuffer using FileReader API | ⚪ todo | — |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-3](tasks/US-PRJ-5-3.md) | Test: Handles missing or invalid file gracefully | ⚪ todo | — |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-4](tasks/US-PRJ-5-4.md) | Test: Works in all modern browsers | ⚪ todo | — |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-5](tasks/US-PRJ-5-5.md) | Create pbw-loader.js module with File API reader | ⚪ todo | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-6](tasks/US-PRJ-5-6.md) | Add file validation: zip magic byte check | ⚪ todo | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-7](tasks/US-PRJ-5-7.md) | TEST: Unit test file reading with mock File objects (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-5-8](tasks/US-PRJ-5-8.md) | TEST: Unit test rejection of non-PBW files (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
-| [US-PRJ-6-1](tasks/US-PRJ-6-1.md) | Test: JSZip library integrated | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-10](tasks/US-PRJ-6-10.md) | Add error handling for malformed PBW bundles | ⚪ todo | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-11](tasks/US-PRJ-6-11.md) | TEST: Unit test extraction from known-good PBW fixtures (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-12](tasks/US-PRJ-6-12.md) | TEST: Unit test extraction of optional files (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-13](tasks/US-PRJ-6-13.md) | TEST: Unit test corrupt/invalid zip handling (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-2](tasks/US-PRJ-6-2.md) | Test: PBW zip contents are listed and accessible | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-3](tasks/US-PRJ-6-3.md) | Test: appinfo.json is extracted and parsed as JSON | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-4](tasks/US-PRJ-6-4.md) | Test: pebble-app.bin extracted as ArrayBuffer | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-5](tasks/US-PRJ-6-5.md) | Test: app_resources.pbpack extracted as ArrayBuffer if present | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-6](tasks/US-PRJ-6-6.md) | Test: worker.bin extracted as ArrayBuffer if present | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-7](tasks/US-PRJ-6-7.md) | Test: Handles malformed or incomplete PBW files with clear errors | ⚪ todo | — |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-8](tasks/US-PRJ-6-8.md) | Integrate JSZip library | ⚪ todo | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-6-9](tasks/US-PRJ-6-9.md) | Implement PBW zip extraction logic | ⚪ todo | 2 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
-| [US-PRJ-7-1](tasks/US-PRJ-7-1.md) | Test: Output object contains: uuid name version companyName appBinary resourcesBinary workerBinary sdkVersion appFlags | ⚪ todo | — |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-10](tasks/US-PRJ-7-10.md) | TEST: Integration test with real PBW files end-to-end (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-2](tasks/US-PRJ-7-2.md) | Test: Fields are null/undefined when not present in PBW | ⚪ todo | — |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-3](tasks/US-PRJ-7-3.md) | Test: UUID is validated as proper format | ⚪ todo | — |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-4](tasks/US-PRJ-7-4.md) | Test: Tested with multiple real PBW files | ⚪ todo | — |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-5](tasks/US-PRJ-7-5.md) | Define PBW output schema | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-6](tasks/US-PRJ-7-6.md) | Implement manifest parser and field mapper | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-7](tasks/US-PRJ-7-7.md) | Implement UUID validation | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-8](tasks/US-PRJ-7-8.md) | TEST: Unit test parser with known manifest fixtures (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-7-9](tasks/US-PRJ-7-9.md) | TEST: Unit test UUID validation (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
-| [US-PRJ-8-1](tasks/US-PRJ-8-1.md) | Test: Document exact metadata binary layout (fields sizes offsets byte order) | ⚪ todo | — |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-2](tasks/US-PRJ-8-2.md) | Test: Identify all protocol message types involved (AppFetch etc.) | ⚪ todo | — |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-3](tasks/US-PRJ-8-3.md) | Test: Map manifest JSON fields to protocol metadata fields | ⚪ todo | — |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-4](tasks/US-PRJ-8-4.md) | Test: Document app flag values and their meanings | ⚪ todo | — |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-5](tasks/US-PRJ-8-5.md) | Read and annotate libpebble2/services/install.py metadata handling | ⚪ todo | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-6](tasks/US-PRJ-8-6.md) | Read protocol definitions for AppFetch and related messages | ⚪ todo | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-7](tasks/US-PRJ-8-7.md) | Create binary layout reference document | ⚪ todo | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-8](tasks/US-PRJ-8-8.md) | Create test vectors from libpebble2 | ⚪ todo | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-8-9](tasks/US-PRJ-8-9.md) | TEST: Validate test vectors against PebbleOS documentation | ⚪ todo | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
-| [US-PRJ-9-1](tasks/US-PRJ-9-1.md) | Test: UUID encoded as 16-byte binary correctly | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-10](tasks/US-PRJ-9-10.md) | Implement fixed-length string encoder | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-11](tasks/US-PRJ-9-11.md) | Implement version and SDK version encoder | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-12](tasks/US-PRJ-9-12.md) | Implement app flags resolver | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-13](tasks/US-PRJ-9-13.md) | Implement complete metadata buffer builder | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-14](tasks/US-PRJ-9-14.md) | TEST: UUID encoding roundtrip (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-15](tasks/US-PRJ-9-15.md) | TEST: String encoding padding and truncation (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-16](tasks/US-PRJ-9-16.md) | TEST: Byte-comparison against libpebble2 reference output (Node.js) | ⚪ todo | 2 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-17](tasks/US-PRJ-9-17.md) | TEST: Metadata for watchface vs app produces different flags (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-2](tasks/US-PRJ-9-2.md) | Test: App name and company name encoded as fixed-length strings | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-3](tasks/US-PRJ-9-3.md) | Test: Version major/minor encoded correctly | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-4](tasks/US-PRJ-9-4.md) | Test: App flags (watchface vs app) set from manifest | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-5](tasks/US-PRJ-9-5.md) | Test: SDK version included | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-6](tasks/US-PRJ-9-6.md) | Test: Icon resource ID included | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-7](tasks/US-PRJ-9-7.md) | Test: Output is an ArrayBuffer ready to send as protocol payload | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-8](tasks/US-PRJ-9-8.md) | Test: Matches format expected by PebbleOS (verified against libpebble2 reference) | ⚪ todo | — |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
-| [US-PRJ-9-9](tasks/US-PRJ-9-9.md) | Implement UUID string-to-binary encoder | ⚪ todo | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-5-1](tasks/US-PRJ-5-1.md) | Test: File input accepts .pbw files | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-2](tasks/US-PRJ-5-2.md) | Test: File is read as ArrayBuffer using FileReader API | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-3](tasks/US-PRJ-5-3.md) | Test: Handles missing or invalid file gracefully | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-4](tasks/US-PRJ-5-4.md) | Test: Works in all modern browsers | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-5](tasks/US-PRJ-5-5.md) | Create pbw-loader.js module with File API reader | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-6](tasks/US-PRJ-5-6.md) | Add file validation: zip magic byte check | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-7](tasks/US-PRJ-5-7.md) | TEST: Unit test file reading with mock File objects (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-5-8](tasks/US-PRJ-5-8.md) | TEST: Unit test rejection of non-PBW files (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-5](stories/US-PRJ-5.md) |
+| [US-PRJ-6-1](tasks/US-PRJ-6-1.md) | Test: JSZip library integrated | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-10](tasks/US-PRJ-6-10.md) | Add error handling for malformed PBW bundles | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-11](tasks/US-PRJ-6-11.md) | TEST: Unit test extraction from known-good PBW fixtures (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-12](tasks/US-PRJ-6-12.md) | TEST: Unit test extraction of optional files (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-13](tasks/US-PRJ-6-13.md) | TEST: Unit test corrupt/invalid zip handling (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-2](tasks/US-PRJ-6-2.md) | Test: PBW zip contents are listed and accessible | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-3](tasks/US-PRJ-6-3.md) | Test: appinfo.json is extracted and parsed as JSON | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-4](tasks/US-PRJ-6-4.md) | Test: pebble-app.bin extracted as ArrayBuffer | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-5](tasks/US-PRJ-6-5.md) | Test: app_resources.pbpack extracted as ArrayBuffer if present | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-6](tasks/US-PRJ-6-6.md) | Test: worker.bin extracted as ArrayBuffer if present | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-7](tasks/US-PRJ-6-7.md) | Test: Handles malformed or incomplete PBW files with clear errors | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-8](tasks/US-PRJ-6-8.md) | Integrate JSZip library | ✅ done | 1 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-6-9](tasks/US-PRJ-6-9.md) | Implement PBW zip extraction logic | ✅ done | 2 |  | — | — | [US-PRJ-6](stories/US-PRJ-6.md) |
+| [US-PRJ-7-1](tasks/US-PRJ-7-1.md) | Test: Output object contains: uuid name version companyName appBinary resourcesBinary workerBinary sdkVersion appFlags | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-10](tasks/US-PRJ-7-10.md) | TEST: Integration test with real PBW files end-to-end (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-2](tasks/US-PRJ-7-2.md) | Test: Fields are null/undefined when not present in PBW | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-3](tasks/US-PRJ-7-3.md) | Test: UUID is validated as proper format | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-4](tasks/US-PRJ-7-4.md) | Test: Tested with multiple real PBW files | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-5](tasks/US-PRJ-7-5.md) | Define PBW output schema | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-6](tasks/US-PRJ-7-6.md) | Implement manifest parser and field mapper | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-7](tasks/US-PRJ-7-7.md) | Implement UUID validation | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-8](tasks/US-PRJ-7-8.md) | TEST: Unit test parser with known manifest fixtures (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-7-9](tasks/US-PRJ-7-9.md) | TEST: Unit test UUID validation (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-7](stories/US-PRJ-7.md) |
+| [US-PRJ-8-1](tasks/US-PRJ-8-1.md) | Test: Document exact metadata binary layout (fields sizes offsets byte order) | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-2](tasks/US-PRJ-8-2.md) | Test: Identify all protocol message types involved (AppFetch etc.) | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-3](tasks/US-PRJ-8-3.md) | Test: Map manifest JSON fields to protocol metadata fields | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-4](tasks/US-PRJ-8-4.md) | Test: Document app flag values and their meanings | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-5](tasks/US-PRJ-8-5.md) | Read and annotate libpebble2/services/install.py metadata handling | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-6](tasks/US-PRJ-8-6.md) | Read protocol definitions for AppFetch and related messages | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-7](tasks/US-PRJ-8-7.md) | Create binary layout reference document | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-8](tasks/US-PRJ-8-8.md) | Create test vectors from libpebble2 | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-8-9](tasks/US-PRJ-8-9.md) | TEST: Validate test vectors against PebbleOS documentation | ✅ done | 1 |  | — | — | [US-PRJ-8](stories/US-PRJ-8.md) |
+| [US-PRJ-9-1](tasks/US-PRJ-9-1.md) | Test: UUID encoded as 16-byte binary correctly | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-10](tasks/US-PRJ-9-10.md) | Implement fixed-length string encoder | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-11](tasks/US-PRJ-9-11.md) | Implement version and SDK version encoder | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-12](tasks/US-PRJ-9-12.md) | Implement app flags resolver | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-13](tasks/US-PRJ-9-13.md) | Implement complete metadata buffer builder | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-14](tasks/US-PRJ-9-14.md) | TEST: UUID encoding roundtrip (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-15](tasks/US-PRJ-9-15.md) | TEST: String encoding padding and truncation (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-16](tasks/US-PRJ-9-16.md) | TEST: Byte-comparison against libpebble2 reference output (Node.js) | ✅ done | 2 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-17](tasks/US-PRJ-9-17.md) | TEST: Metadata for watchface vs app produces different flags (Node.js) | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-2](tasks/US-PRJ-9-2.md) | Test: App name and company name encoded as fixed-length strings | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-3](tasks/US-PRJ-9-3.md) | Test: Version major/minor encoded correctly | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-4](tasks/US-PRJ-9-4.md) | Test: App flags (watchface vs app) set from manifest | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-5](tasks/US-PRJ-9-5.md) | Test: SDK version included | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-6](tasks/US-PRJ-9-6.md) | Test: Icon resource ID included | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-7](tasks/US-PRJ-9-7.md) | Test: Output is an ArrayBuffer ready to send as protocol payload | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-8](tasks/US-PRJ-9-8.md) | Test: Matches format expected by PebbleOS (verified against libpebble2 reference) | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |
+| [US-PRJ-9-9](tasks/US-PRJ-9-9.md) | Implement UUID string-to-binary encoder | ✅ done | 1 |  | — | — | [US-PRJ-9](stories/US-PRJ-9.md) |

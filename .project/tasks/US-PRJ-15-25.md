@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-15-25
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-15
 tags: []
 title: 'TEST: Progress events fire in correct order (Node.js, mock bridge)'

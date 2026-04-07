@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:31:42.506841Z","outcome":"success","status":"done","note":"pebble_tool/commands/install.py is a thin CLI wrapper. Serial path calls AppInstaller(pebble, pbw).install(). WebSocket path sends whole PBW to phone. Our target is the serial/direct path.","actor":"Ryan Tregea"}

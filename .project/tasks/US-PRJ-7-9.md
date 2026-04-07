@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-7-9
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-7
 tags: []
 title: 'TEST: Unit test UUID validation (Node.js)'

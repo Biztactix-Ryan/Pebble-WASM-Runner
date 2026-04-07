@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-10-7
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-10
 tags: []
 title: Read and annotate libpebble2/services/putbytes.py
