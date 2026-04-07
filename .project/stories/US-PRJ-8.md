@@ -21,3 +21,5 @@ updated: '2026-04-07'
 As a developer, I want to understand the exact binary metadata format that PebbleOS expects during app installation so that I can correctly encode metadata from the PBW manifest.
 
 Requires reading libpebble2/services/install.py and related protocol definitions to document the exact field layout, byte order, and encoding.
+
+PREREQUISITE: US-PRJ-19 (Bootstrap source repositories) must complete first — this story reads files from libpebble2.

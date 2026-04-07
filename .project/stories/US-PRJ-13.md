@@ -23,3 +23,5 @@ updated: '2026-04-07'
 As a developer, I want to fully understand the install sequence by studying libpebble2/services/install.py and pebble_tool/commands/install.py so that I can accurately port the orchestration logic.
 
 Need to document: the exact message exchange sequence, how AppFetch works, how install slots are requested and assigned, the order of binary transfers, and how completion/errors are signaled.
+
+PREREQUISITE: US-PRJ-19 (Bootstrap source repositories) must complete first — this story reads files from libpebble2 and pebble-tool.

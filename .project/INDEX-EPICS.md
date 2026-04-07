@@ -2,7 +2,7 @@
 
 | ID | Title | Status | Priority | Tags | Stories | Points |
 | -- | ----- | ------ | -------- | ---- | ------- | ------ |
-| [EPIC-PRJ-1](epics/EPIC-PRJ-1.md) | Emulator Packet Bridge | 🏃 active | must | mvp, foundation | 4 | 16 |
+| [EPIC-PRJ-1](epics/EPIC-PRJ-1.md) | Emulator Packet Bridge | 🏃 active | must | mvp, foundation | 5 | 21 |
 | [EPIC-PRJ-2](epics/EPIC-PRJ-2.md) | PBW File Parser | 🏃 active | must | mvp | 3 | 7 |
 | [EPIC-PRJ-3](epics/EPIC-PRJ-3.md) | Metadata Conversion | 🏃 active | must | mvp | 2 | 6 |
 | [EPIC-PRJ-4](epics/EPIC-PRJ-4.md) | PutBytes Protocol Engine | 🏃 active | must | mvp | 3 | 13 |

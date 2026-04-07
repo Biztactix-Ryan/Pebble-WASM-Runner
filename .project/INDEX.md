@@ -3,8 +3,8 @@
 | Metric | Count |
 | ------ | ----- |
 | Epics | 6 |
-| Stories | 18 |
-| Tasks | 242 |
+| Stories | 19 |
+| Tasks | 260 |
 
 ## Indexes
 

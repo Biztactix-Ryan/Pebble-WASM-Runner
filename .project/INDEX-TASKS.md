@@ -155,6 +155,24 @@
 | [US-PRJ-18-7](tasks/US-PRJ-18-7.md) | Add Install button with disabled/enabled states | ⚪ todo | 1 |  | — | — | [US-PRJ-18](stories/US-PRJ-18.md) |
 | [US-PRJ-18-8](tasks/US-PRJ-18-8.md) | Wire Install button to PebbleInstaller | ⚪ todo | 1 |  | — | — | [US-PRJ-18](stories/US-PRJ-18.md) |
 | [US-PRJ-18-9](tasks/US-PRJ-18-9.md) | Add progress bar component | ⚪ todo | 1 |  | — | — | [US-PRJ-18](stories/US-PRJ-18.md) |
+| [US-PRJ-19-1](tasks/US-PRJ-19-1.md) | Test: pebble-qemu-wasm source cloned from ericmigi/pebble-qemu-wasm | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-10](tasks/US-PRJ-19-10.md) | Clone libpebble2 as read-only reference | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-11](tasks/US-PRJ-19-11.md) | Clone pebble-tool as read-only reference | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-12](tasks/US-PRJ-19-12.md) | Install Emscripten SDK and document build prerequisites | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-13](tasks/US-PRJ-19-13.md) | Run build_wasm.sh and verify WASM output | ⚪ todo | 2 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-14](tasks/US-PRJ-19-14.md) | Obtain PebbleOS firmware image | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-15](tasks/US-PRJ-19-15.md) | Boot emulator and verify PebbleOS runs | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-16](tasks/US-PRJ-19-16.md) | Document project directory structure | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-17](tasks/US-PRJ-19-17.md) | TEST: WASM build produces valid output (Linux) | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-18](tasks/US-PRJ-19-18.md) | TEST: Emulator boots to watch face (Linux headless) | ⚪ todo | 2 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-2](tasks/US-PRJ-19-2.md) | Test: libpebble2 cloned from pebble/libpebble2 as reference | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-3](tasks/US-PRJ-19-3.md) | Test: pebble-tool cloned from pebble/pebble-tool as reference | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-4](tasks/US-PRJ-19-4.md) | Test: build_wasm.sh runs successfully and produces WASM output | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-5](tasks/US-PRJ-19-5.md) | Test: Emulator boots PebbleOS in a browser and shows the watch face | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-6](tasks/US-PRJ-19-6.md) | Test: PebbleOS firmware image is available and loads correctly | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-7](tasks/US-PRJ-19-7.md) | Test: Build dependencies (Emscripten SDK) documented | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-8](tasks/US-PRJ-19-8.md) | Test: Reference repos clearly marked as read-only in project structure | ⚪ todo | — |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
+| [US-PRJ-19-9](tasks/US-PRJ-19-9.md) | Clone pebble-qemu-wasm from ericmigi/pebble-qemu-wasm | ⚪ todo | 1 |  | — | — | [US-PRJ-19](stories/US-PRJ-19.md) |
 | [US-PRJ-2-1](tasks/US-PRJ-2-1.md) | Test: JS function accepts protocol ID and ArrayBuffer payload | ⚪ todo | — |  | — | — | [US-PRJ-2](stories/US-PRJ-2.md) |
 | [US-PRJ-2-10](tasks/US-PRJ-2-10.md) | TEST: Unit test edge cases — empty, max-size, boundary payloads (Node.js) | ⚪ todo | 1 |  | — | — | [US-PRJ-2](stories/US-PRJ-2.md) |
 | [US-PRJ-2-11](tasks/US-PRJ-2-11.md) | TEST: Integration — send packet into WASM QEMU and verify arrival | ⚪ todo | 2 |  | — | — | [US-PRJ-2](stories/US-PRJ-2.md) |

@@ -191,6 +191,14 @@ entries:
   story_id: null
   epic_id: EPIC-PRJ-6
   tags: []
+- id: US-PRJ-19
+  title: Bootstrap source repositories and verify emulator builds
+  type: story
+  status: ready
+  points: 5
+  story_id: null
+  epic_id: EPIC-PRJ-1
+  tags: []
 - id: US-PRJ-1-1
   title: 'Test: FEED/BEEF packet format documented'
   type: task
@@ -2132,8 +2140,152 @@ entries:
   story_id: US-PRJ-18
   epic_id: null
   tags: []
-total_points: 222
+- id: US-PRJ-19-1
+  title: 'Test: pebble-qemu-wasm source cloned from ericmigi/pebble-qemu-wasm'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-2
+  title: 'Test: libpebble2 cloned from pebble/libpebble2 as reference'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-3
+  title: 'Test: pebble-tool cloned from pebble/pebble-tool as reference'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-4
+  title: 'Test: build_wasm.sh runs successfully and produces WASM output'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-5
+  title: 'Test: Emulator boots PebbleOS in a browser and shows the watch face'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-6
+  title: 'Test: PebbleOS firmware image is available and loads correctly'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-7
+  title: 'Test: Build dependencies (Emscripten SDK) documented'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-8
+  title: 'Test: Reference repos clearly marked as read-only in project structure'
+  type: task
+  status: todo
+  points: null
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-9
+  title: Clone pebble-qemu-wasm from ericmigi/pebble-qemu-wasm
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-10
+  title: Clone libpebble2 as read-only reference
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-11
+  title: Clone pebble-tool as read-only reference
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-12
+  title: Install Emscripten SDK and document build prerequisites
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-13
+  title: Run build_wasm.sh and verify WASM output
+  type: task
+  status: todo
+  points: 2
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-14
+  title: Obtain PebbleOS firmware image
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-15
+  title: Boot emulator and verify PebbleOS runs
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-16
+  title: Document project directory structure
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-17
+  title: 'TEST: WASM build produces valid output (Linux)'
+  type: task
+  status: todo
+  points: 1
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+- id: US-PRJ-19-18
+  title: 'TEST: Emulator boots to watch face (Linux headless)'
+  type: task
+  status: todo
+  points: 2
+  story_id: US-PRJ-19
+  epic_id: null
+  tags: []
+total_points: 239
 completed_points: 0
-story_count: 18
-task_count: 242
+story_count: 19
+task_count: 260
 epic_count: 6

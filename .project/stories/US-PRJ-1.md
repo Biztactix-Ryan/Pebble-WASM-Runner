@@ -21,3 +21,5 @@ updated: '2026-04-07'
 As a developer, I want to fully understand how the FEED/BEEF control protocol works in pebble_control.c so that I can extend it for JS-callable packet injection.
 
 Requires reading and documenting: packet framing format, UART device setup in pebble.c, how pebble_control.c handles incoming/outgoing data, and how Emscripten currently exposes (or doesn't expose) these interfaces.
+
+PREREQUISITE: US-PRJ-19 (Bootstrap source repositories) must complete first — this story reads files from pebble-qemu-wasm.
