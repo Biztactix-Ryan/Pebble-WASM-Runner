@@ -1,8 +1,12 @@
-name: PWR
-prefix: PRJ
-description: ""
-repo: ""
+auto_commit: false
+deploy_branch: null
+description: ''
 hub: false
-next_story_id: 1
-next_epic_id: 1
-
+name: PWR
+next_changeset_id: 1
+next_epic_id: 7
+next_sprint_id: 1
+next_story_id: 19
+prefix: PRJ
+projects: []
+repo: ''
