@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-1-3
 points: null
-status: todo
+status: done
 story_id: US-PRJ-1
 tags: []
 title: 'Test: Control protocol handler flow in pebble_control.c mapped'

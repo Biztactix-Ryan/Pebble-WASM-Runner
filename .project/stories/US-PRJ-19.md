@@ -14,7 +14,7 @@ epic_id: EPIC-PRJ-1
 id: US-PRJ-19
 points: 5
 priority: must
-status: ready
+status: done
 tags:
 - mvp
 - foundation

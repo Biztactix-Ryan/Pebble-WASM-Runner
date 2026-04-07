@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:17:51.328361Z","outcome":"success","status":"done","note":"Emulator boots PebbleOS v4.9.77 in browser. Display active 200x228 (emery). Firmware banner visible, rendering at ~3.5 FPS. Required Chrome --enable-features=SharedArrayBuffer flag for non-localhost HTTP access.","actor":"Ryan Tregea"}

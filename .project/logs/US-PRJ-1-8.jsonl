@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:05:04.353517Z","outcome":"success","status":"done","note":"Protocol spec written to docs/FEED_BEEF_PROTOCOL.md. Covers packet format, all 8 protocol types with payload layouts, data flow diagrams, error recovery, and source references.","actor":"Ryan Tregea"}

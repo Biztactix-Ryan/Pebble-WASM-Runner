@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:05:06.324575Z","outcome":"success","status":"done","note":"Control protocol handler flow mapped in docs/FEED_BEEF_PROTOCOL.md — ingress parser, handler dispatch, UART forwarding, egress collection, and vibe notification paths all documented.","actor":"Ryan Tregea"}

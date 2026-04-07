@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-1-5
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-1
 tags: []
 title: Read and annotate pebble_control.c FEED/BEEF packet handler

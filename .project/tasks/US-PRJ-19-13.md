@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-19-13
 points: 2
-status: todo
+status: done
 story_id: US-PRJ-19
 tags: []
 title: Run build_wasm.sh and verify WASM output

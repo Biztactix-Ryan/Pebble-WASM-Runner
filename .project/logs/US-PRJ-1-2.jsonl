@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-07T20:05:08.895382Z","outcome":"success","status":"done","note":"UART creation path documented: USART2→PebbleControl→TCP:12344, USART3→debug→TCP:12345. Init sequence fully traced.","actor":"Ryan Tregea"}

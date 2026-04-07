@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-19-15
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-19
 tags: []
 title: Boot emulator and verify PebbleOS runs

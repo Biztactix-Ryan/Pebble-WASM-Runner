@@ -4,7 +4,7 @@ created: '2026-04-07'
 depends_on: []
 id: US-PRJ-19-10
 points: 1
-status: todo
+status: done
 story_id: US-PRJ-19
 tags: []
 title: Clone libpebble2 as read-only reference
