@@ -2,7 +2,7 @@ entries:
 - id: EPIC-PRJ-1
   title: Emulator Packet Bridge
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -10,7 +10,7 @@ entries:
 - id: EPIC-PRJ-2
   title: PBW File Parser
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -18,7 +18,7 @@ entries:
 - id: EPIC-PRJ-3
   title: Metadata Conversion
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -26,7 +26,7 @@ entries:
 - id: EPIC-PRJ-4
   title: PutBytes Protocol Engine
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -34,7 +34,7 @@ entries:
 - id: EPIC-PRJ-5
   title: Install Flow Orchestrator
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -42,7 +42,7 @@ entries:
 - id: EPIC-PRJ-6
   title: Browser UI
   type: epic
-  status: draft
+  status: active
   points: null
   story_id: null
   epic_id: null
@@ -50,7 +50,7 @@ entries:
 - id: US-PRJ-1
   title: Understand FEED/BEEF control protocol internals
   type: story
-  status: backlog
+  status: ready
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-1
@@ -82,7 +82,7 @@ entries:
 - id: US-PRJ-5
   title: Load PBW file via browser File API
   type: story
-  status: backlog
+  status: ready
   points: 2
   story_id: null
   epic_id: EPIC-PRJ-2
@@ -106,7 +106,7 @@ entries:
 - id: US-PRJ-8
   title: Research libpebble2 app metadata format
   type: story
-  status: backlog
+  status: ready
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-3
@@ -122,7 +122,7 @@ entries:
 - id: US-PRJ-10
   title: Research PutBytes protocol from libpebble2
   type: story
-  status: backlog
+  status: ready
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-4
@@ -146,7 +146,7 @@ entries:
 - id: US-PRJ-13
   title: Research install sequence from libpebble2
   type: story
-  status: backlog
+  status: ready
   points: 3
   story_id: null
   epic_id: EPIC-PRJ-5

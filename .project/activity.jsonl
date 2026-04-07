@@ -282,3 +282,14 @@
 {"event_type":"create","item_id":"US-PRJ-18-13","item_type":"task","changes":{},"timestamp":"2026-04-07T10:55:23.977937Z","actor":"Ryan Tregea","source":"cli"}
 {"event_type":"create","item_id":"US-PRJ-18-14","item_type":"task","changes":{},"timestamp":"2026-04-07T10:55:23.983801Z","actor":"Ryan Tregea","source":"cli"}
 {"event_type":"create","item_id":"US-PRJ-18-15","item_type":"task","changes":{},"timestamp":"2026-04-07T10:55:23.990730Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-1","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T10:59:59.023406Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-2","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T10:59:59.338761Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-3","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T10:59:59.443675Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-4","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T10:59:59.588071Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-5","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T10:59:59.818954Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-6","item_type":"epic","changes":{"status":{"before":"draft","after":"active"}},"timestamp":"2026-04-07T11:00:00.032030Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-1","item_type":"story","changes":{"status":{"before":"backlog","after":"ready"}},"timestamp":"2026-04-07T11:00:04.525363Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-5","item_type":"story","changes":{"status":{"before":"backlog","after":"ready"}},"timestamp":"2026-04-07T11:00:04.963351Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-8","item_type":"story","changes":{"status":{"before":"backlog","after":"ready"}},"timestamp":"2026-04-07T11:00:05.408061Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-10","item_type":"story","changes":{"status":{"before":"backlog","after":"ready"}},"timestamp":"2026-04-07T11:00:05.890784Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-13","item_type":"story","changes":{"status":{"before":"backlog","after":"ready"}},"timestamp":"2026-04-07T11:00:06.109097Z","actor":"Ryan Tregea","source":"cli"}

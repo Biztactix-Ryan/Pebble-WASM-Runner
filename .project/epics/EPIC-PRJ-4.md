@@ -3,7 +3,7 @@ created: '2026-04-07'
 id: EPIC-PRJ-4
 points: null
 priority: must
-status: draft
+status: active
 tags:
 - mvp
 target_date: null
