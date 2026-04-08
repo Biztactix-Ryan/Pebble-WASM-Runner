@@ -290,7 +290,8 @@ export function parseBlobDBResponse(data) {
  * @returns {Uint8Array} Serialised metadata (128 bytes)
  */
 export function serialiseAppMetadata(meta) {
-  const buf = new ArrayBuffer(128);
+  // 16 (uuid) + 4 (flags) + 4 (icon) + 4 (versions) + 2 (face) + 96 (name) = 126
+  const buf = new ArrayBuffer(126);
   const view = new DataView(buf);
   const bytes = new Uint8Array(buf);
   let offset = 0;

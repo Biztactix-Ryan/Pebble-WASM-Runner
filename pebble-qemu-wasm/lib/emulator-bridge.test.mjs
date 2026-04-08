@@ -42,14 +42,12 @@ function createMockModule(opts = {}) {
     HEAPU8: heap,
     _injectedData: [],  // track injections for assertions
 
-    _malloc(size) {
+    stackSave() { return heapOffset; },
+    stackRestore(sp) { heapOffset = sp; },
+    stackAlloc(size) {
       const ptr = heapOffset;
       heapOffset += size;
       return ptr;
-    },
-
-    _free(ptr) {
-      // no-op for mock
     },
 
     _pebble_control_inject_wasm(ptr, len) {

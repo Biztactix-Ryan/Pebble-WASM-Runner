@@ -27,12 +27,12 @@ export class EmulatorBridge {
   /**
    * @param {Object} Module - Emscripten Module object with WASM exports
    */
-  constructor(Module) {
+  constructor(Module, { debug = false } = {}) {
     this._Module = Module;
     this._pendingResolvers = new Map(); // endpoint → { resolve, reject, timer }
     this._incomingBuffer = new Uint8Array(0);
     this._pollTimer = null;
-    this._readPtr = 0; // WASM heap pointer for read buffer
+    this._debug = debug;
     this._startPolling();
   }
 
@@ -82,6 +82,15 @@ export class EmulatorBridge {
   }
 
   /**
+   * Send a message without waiting for a response (fire-and-forget).
+   * @param {number} endpoint
+   * @param {Uint8Array} payload
+   */
+  send(endpoint, payload) {
+    this._inject(endpoint, payload);
+  }
+
+  /**
    * Frame a Pebble Protocol message in FEED/BEEF and inject into the emulator.
    */
   _inject(endpoint, payload) {
@@ -89,14 +98,20 @@ export class EmulatorBridge {
     const feedBeefFrame = frameFeedBeef(ppFrame);
 
     const M = this._Module;
-    const ptr = M._malloc(feedBeefFrame.length);
-    if (!ptr) throw new Error('Failed to allocate WASM memory for injection');
 
+    if (this._debug) {
+      const hex = Array.from(feedBeefFrame.slice(0, 20)).map(b => b.toString(16).padStart(2, '0')).join(' ');
+      console.log(`[bridge] inject ${feedBeefFrame.length} bytes to endpoint 0x${endpoint.toString(16)}: ${hex}...`);
+    }
+
+    // Use stack allocation (no _malloc/_free needed)
+    const sp = M.stackSave();
     try {
+      const ptr = M.stackAlloc(feedBeefFrame.length);
       M.HEAPU8.set(feedBeefFrame, ptr);
       M._pebble_control_inject_wasm(ptr, feedBeefFrame.length);
     } finally {
-      M._free(ptr);
+      M.stackRestore(sp);
     }
   }
 
@@ -127,18 +142,24 @@ export class EmulatorBridge {
     const avail = M._pebble_control_readable_wasm();
     if (avail <= 0) return;
 
-    // Allocate read buffer in WASM heap (reuse if possible)
-    const readLen = Math.min(avail, READ_BUF_SIZE);
-    if (!this._readPtr) {
-      this._readPtr = M._malloc(READ_BUF_SIZE);
+    if (this._debug) {
+      console.log(`[bridge] outbox has ${avail} bytes`);
     }
-    if (!this._readPtr) return;
 
-    const bytesRead = M._pebble_control_read_wasm(this._readPtr, readLen);
-    if (bytesRead <= 0) return;
+    // Use stack allocation for read buffer
+    const readLen = Math.min(avail, READ_BUF_SIZE);
+    const sp = M.stackSave();
+    const ptr = M.stackAlloc(readLen);
 
-    // Copy from WASM heap to JS
-    const chunk = new Uint8Array(M.HEAPU8.buffer, this._readPtr, bytesRead).slice();
+    const bytesRead = M._pebble_control_read_wasm(ptr, readLen);
+    if (bytesRead <= 0) {
+      M.stackRestore(sp);
+      return;
+    }
+
+    // Copy from WASM heap to JS before restoring stack
+    const chunk = new Uint8Array(M.HEAPU8.buffer, ptr, bytesRead).slice();
+    M.stackRestore(sp);
 
     // Append to incoming buffer
     const combined = new Uint8Array(this._incomingBuffer.length + chunk.length);
@@ -183,6 +204,10 @@ export class EmulatorBridge {
       }
 
       // Route to pending resolver
+      if (this._debug) {
+        const hex = Array.from(ppPacket.payload.slice(0, 30)).map(b => b.toString(16).padStart(2, '0')).join(' ');
+        console.log(`[bridge] received packet on endpoint 0x${ppPacket.endpoint.toString(16)}, ${ppPacket.payload.length} bytes: ${hex}`);
+      }
       this._onPacket(ppPacket.endpoint, ppPacket.payload);
     }
   }
@@ -217,10 +242,6 @@ export class EmulatorBridge {
    */
   destroy() {
     this._stopPolling();
-    if (this._readPtr) {
-      this._Module._free(this._readPtr);
-      this._readPtr = 0;
-    }
     // Reject any pending resolvers
     for (const [endpoint, pending] of this._pendingResolvers) {
       clearTimeout(pending.timer);

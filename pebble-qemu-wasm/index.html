@@ -431,6 +431,9 @@
             // General noise filter
             if (matchesAny(text, QEMU_NOISE)) return;
 
+            // FPS reports from TCI instrumentation — already on page
+            if (text.indexOf('[fps]') >= 0 || text.indexOf('[tci]') >= 0) return;
+
             log('[err] ' + text);
         }
 
@@ -558,7 +561,7 @@
                 if (elapsed >= 3000) {
                     currentFps = Math.round(fpsFrameCount / (elapsed / 1000) * 10) / 10;
                     fpsEl.textContent = 'FPS: ' + currentFps.toFixed(1);
-                    console.log('[fps] ' + currentFps.toFixed(1));
+                    // FPS shown on page, no need to log
                     fpsFrameCount = 0;
                     fpsLastTime = now;
                 }
@@ -813,12 +816,93 @@
         var installStatusEl = document.getElementById('install-status');
         var installMetaEl = document.getElementById('install-meta');
         var parsedPBW = null;
+        var outboxMonitorId = null;
 
         // Show install section once emulator is booting
         var origOnRuntime = Module.onRuntimeInitialized;
+        var serialBridgeReady = false;
         Module.onRuntimeInitialized = function() {
             origOnRuntime.call(this);
             installSection.style.display = 'block';
+            installStatusEl.textContent = 'Waiting for PebbleOS to boot...';
+            installStatusEl.style.color = '#888';
+
+            // Run diagnostics after a delay (pebble_control is created during main())
+            setTimeout(function() {
+                // Test outbox by writing directly
+                if (Module._pebble_control_test_outbox) {
+                    Module._pebble_control_test_outbox();
+                    var testAvail = Module._pebble_control_readable_wasm
+                        ? Module._pebble_control_readable_wasm() : -1;
+                    log('[bridge] outbox test: wrote test frame, readable=' + testAvail);
+                } else {
+                    log('[bridge] _pebble_control_test_outbox not available');
+                }
+
+                // Check pebble_control status
+                if (Module._pebble_control_status_wasm) {
+                    var st = Module._pebble_control_status_wasm();
+                    log('[bridge] pebble_control status: 0x' + st.toString(16) +
+                        ' (exists=' + !!(st&1) + ' uart=' + !!(st&2) +
+                        ' handlers=' + !!(st&4) + ' timer=' + !!(st&8) +
+                        ' UE=' + !!(st&0x10) + ' RE=' + !!(st&0x20) + ' TE=' + !!(st&0x40) + ')');
+                } else {
+                    log('[bridge] _pebble_control_status_wasm not available');
+                }
+
+                // Poll UART enable state every 5 seconds until enabled
+                var uartPoll = setInterval(function() {
+                    if (!Module._pebble_control_status_wasm) return;
+                    var st = Module._pebble_control_status_wasm();
+                    var ue = !!(st & 0x10), re = !!(st & 0x20), te = !!(st & 0x40);
+                    if (ue && re) {
+                        log('[bridge] UART enabled! UE=' + ue + ' RE=' + re + ' TE=' + te);
+                        installStatusEl.textContent = 'PebbleOS UART ready — select a PBW to install';
+                        installStatusEl.style.color = '#4cc9f0';
+                        serialBridgeReady = true;
+                        clearInterval(uartPoll);
+                    }
+                }, 5000);
+            }, 5000);
+
+            // Monitor outbox for firmware boot traffic on serial1
+            var outboxPollCount = 0;
+            var outboxBytesTotal = 0;
+            outboxMonitorId = setInterval(function() {
+                if (!Module._pebble_control_readable_wasm) return;
+                var avail = Module._pebble_control_readable_wasm();
+                if (avail > 0) {
+                    var sp = Module.stackSave();
+                    var ptr = Module.stackAlloc(avail);
+                    var read = Module._pebble_control_read_wasm(ptr, avail);
+                    if (read > 0) {
+                        var bytes = new Uint8Array(Module.HEAPU8.buffer, ptr, read).slice();
+                        outboxBytesTotal += read;
+                        var hex = Array.from(bytes.slice(0, 32)).map(function(b) {
+                            return b.toString(16).padStart(2, '0');
+                        }).join(' ');
+                        log('[serial1] ' + read + ' bytes (total: ' + outboxBytesTotal + '): ' + hex);
+
+                        // Check for readiness: if we see any FEED/BEEF traffic, firmware is up
+                        if (!serialBridgeReady && outboxBytesTotal > 50) {
+                            serialBridgeReady = true;
+                            installStatusEl.textContent = 'PebbleOS ready — select a PBW to install';
+                            installStatusEl.style.color = '#4cc9f0';
+                            log('[serial1] Firmware is sending on serial1 — bridge ready');
+                        }
+                    }
+                    Module.stackRestore(sp);
+                }
+                outboxPollCount++;
+                // After 30s of no data, firmware might not use serial1 in this config
+                if (outboxPollCount > 1875 && outboxBytesTotal === 0) { // 30s at 16ms
+                    serialBridgeReady = true; // allow install attempt anyway
+                    installStatusEl.textContent = 'Ready (no serial1 boot traffic detected)';
+                    installStatusEl.style.color = '#ffa726';
+                    log('[serial1] No boot traffic after 30s — allowing install anyway');
+                    clearInterval(outboxMonitorId);
+                }
+            }, 16);
         };
 
         installFileEl.addEventListener('change', async function() {
@@ -891,6 +975,23 @@
                     return;
                 }
 
+                // Stop the outbox monitor so it doesn't steal data from the bridge
+                if (outboxMonitorId) {
+                    clearInterval(outboxMonitorId);
+                    outboxMonitorId = null;
+                    // Drain any leftover data in the outbox
+                    if (Module._pebble_control_readable_wasm) {
+                        var leftover = Module._pebble_control_readable_wasm();
+                        if (leftover > 0) {
+                            var sp = Module.stackSave();
+                            var ptr = Module.stackAlloc(leftover);
+                            Module._pebble_control_read_wasm(ptr, leftover);
+                            Module.stackRestore(sp);
+                            log('[install] Drained ' + leftover + ' bytes from outbox');
+                        }
+                    }
+                }
+
                 installStatusEl.textContent = 'Installing via serial bridge...';
                 installStatusEl.style.color = '#4cc9f0';
                 log('[install] Starting install of ' + parsedPBW.appName + ' via serial bridge');
@@ -898,10 +999,10 @@
                 var { EmulatorBridge } = await import('./lib/emulator-bridge.mjs');
                 var { installApp } = await import('./lib/app-installer.mjs');
 
-                var bridge = new EmulatorBridge(Module);
+                var bridge = new EmulatorBridge(Module, { debug: true });
 
                 await installApp(bridge, parsedPBW, {
-                    timeout: 30000,
+                    timeout: 120000, // 2 min — WASM emulator is slow (~1 FPS)
                     onProgress: function(phase, sent, total) {
                         var pct = total > 0 ? Math.round(sent / total * 100) : 0;
                         installProgressFill.style.width = pct + '%';

@@ -273,7 +273,7 @@ console.log('\n--- AppMetadata ---');
     appName: 'TestApp',
   });
 
-  assert(meta.length === 128, 'AppMetadata is 128 bytes');
+  assert(meta.length === 126, 'AppMetadata is 126 bytes');
   assertBytes(meta.slice(0, 16), uuid, 'UUID at offset 0');
 
   const view = new DataView(meta.buffer);

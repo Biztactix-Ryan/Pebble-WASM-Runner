@@ -52,7 +52,7 @@ if '--profiling-funcs' not in content:
     # Add --profiling-funcs to c_link_args
     content = content.replace(
         "'-sEXPORTED_RUNTIME_METHODS=addFunction,removeFunction,TTY,FS']",
-        "'-sEXPORTED_RUNTIME_METHODS=addFunction,removeFunction,TTY,FS','--profiling-funcs']"
+        "'-sEXPORTED_RUNTIME_METHODS=addFunction,removeFunction,TTY,FS,stackSave,stackRestore,stackAlloc','--profiling-funcs']"
     )
     with open(ems_path, 'w') as f:
         f.write(content)

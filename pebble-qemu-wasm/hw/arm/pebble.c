@@ -255,7 +255,9 @@ EMSCRIPTEN_KEEPALIVE void pebble_set_buttons(uint32_t state)
 EMSCRIPTEN_KEEPALIVE void pebble_control_inject_wasm(const uint8_t *buf, int len)
 {
     if (s_pebble_control) {
+        bql_lock();
         pebble_control_inject(s_pebble_control, buf, len);
+        bql_unlock();
     }
 }
 
@@ -267,6 +269,30 @@ EMSCRIPTEN_KEEPALIVE int pebble_control_read_wasm(uint8_t *buf, int max_len)
 EMSCRIPTEN_KEEPALIVE int pebble_control_readable_wasm(void)
 {
     return pebble_control_wasm_readable();
+}
+
+/* Diagnostic: returns bitmask of pebble_control state */
+EMSCRIPTEN_KEEPALIVE int pebble_control_status_wasm(void)
+{
+    if (!s_pebble_control) return 0;
+    return pebble_control_wasm_status(s_pebble_control);
+}
+
+/* Test: write a known byte pattern directly to wasm outbox to verify JS can read it */
+EMSCRIPTEN_KEEPALIVE void pebble_control_test_outbox(void)
+{
+    /* Write a minimal FEED/BEEF frame with a test payload */
+    uint8_t test_frame[] = {
+        0xFE, 0xED,     /* FEED header */
+        0x00, 0x01,     /* protocol: SPP */
+        0x00, 0x06,     /* length: 6 */
+        0x00, 0x02,     /* PP length: 2 */
+        0xFF, 0xFF,     /* PP endpoint: 0xFFFF (test) */
+        0xCA, 0xFE,     /* PP payload: 0xCAFE */
+        0xBE, 0xEF      /* BEEF footer */
+    };
+    extern void wasm_outbox_write(const uint8_t *buf, int len);
+    wasm_outbox_write(test_frame, sizeof(test_frame));
 }
 
 static void pebble_wasm_button_poll(void *opaque)

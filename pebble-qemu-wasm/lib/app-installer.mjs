@@ -96,8 +96,19 @@ export async function installApp(bridge, pbw, options = {}) {
 
   const blobToken = Math.floor(Math.random() * 0xFFFE) + 1;
   const blobPayload = buildBlobDBInsert(blobToken, BlobDatabaseID.App, uuid, metadata);
+
+  console.log('[install] BlobDB insert: token=' + blobToken +
+    ' db=' + BlobDatabaseID.App +
+    ' keyLen=' + uuid.length +
+    ' valueLen=' + metadata.length +
+    ' totalPayload=' + blobPayload.length);
+  console.log('[install] UUID:', Array.from(uuid).map(b => b.toString(16).padStart(2, '0')).join(''));
+  console.log('[install] Metadata (first 32):', Array.from(metadata.slice(0, 32)).map(b => b.toString(16).padStart(2, '0')).join(' '));
+  console.log('[install] BlobDB payload:', Array.from(blobPayload.slice(0, 40)).map(b => b.toString(16).padStart(2, '0')).join(' '));
+
   const blobResponse = await bridge.sendAndReceive(Endpoint.BlobDB, blobPayload, timeout);
   const blobResult = parseBlobDBResponse(blobResponse);
+  console.log('[install] BlobDB response: status=' + blobResult.status + ' token=' + blobResult.token);
 
   if (blobResult.status !== BlobStatus.Success) {
     throw new InstallError(
@@ -107,12 +118,15 @@ export async function installApp(bridge, pbw, options = {}) {
   }
 
   // -- Step 2: AppRunState Start --
+  // Fire-and-forget: firmware doesn't respond on this endpoint, it triggers
+  // an AppFetchRequest on endpoint 0x1771 instead.
   const runStatePayload = buildAppRunStateStart(uuid);
-  // We send AppRunState but the response comes on AppFetch endpoint (different endpoint)
-  // So we send without waiting for a same-endpoint response, then wait for AppFetch.
-  await bridge.sendAndReceive(Endpoint.AppRunState, runStatePayload, timeout);
+  bridge.send(Endpoint.AppRunState, runStatePayload);
 
   // -- Step 3: Wait for AppFetchRequest from firmware --
+  // The firmware needs time to process the BlobDB insert + AppRunState.
+  // At ~1 FPS in WASM, this can take 30-120 seconds of wall time.
+  console.log('[install] Waiting for AppFetchRequest from firmware (this may take a while at ~1 FPS)...');
   const fetchRequestData = await bridge.waitForMessage(Endpoint.AppFetch, timeout);
   const fetchRequest = parseAppFetchRequest(fetchRequestData);
 
@@ -129,9 +143,9 @@ export async function installApp(bridge, pbw, options = {}) {
   const appId = fetchRequest.appId;
 
   // -- Step 4: AppFetchResponse (Start) --
+  // Fire-and-forget: firmware doesn't reply to this, it just starts expecting PutBytes.
   const fetchResponse = buildAppFetchResponse(AppFetchStatus.Start);
-  // Send response (firmware doesn't reply to this)
-  await bridge.sendAndReceive(Endpoint.AppFetch, fetchResponse, timeout);
+  bridge.send(Endpoint.AppFetch, fetchResponse);
 
   // -- Step 5: PutBytes app binary --
   await putBytesTransfer(bridge, {

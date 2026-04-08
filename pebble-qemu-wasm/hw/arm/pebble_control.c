@@ -32,7 +32,7 @@
 #include "pebble_control.h"
 #include "hw/arm/pebble.h"
 
-//#define DEBUG_PEBBLE_CONTROL
+#define DEBUG_PEBBLE_CONTROL
 #ifdef DEBUG_PEBBLE_CONTROL
 #define DPRINTF(fmt, ...)                                 \
     do { printf("PEBBLE_CONTROL: " fmt , ## __VA_ARGS__); \
@@ -211,7 +211,7 @@ static uint8_t wasm_outbox[WASM_OUTBOX_SIZE];
 static uint32_t wasm_outbox_head = 0;  // write position
 static uint32_t wasm_outbox_tail = 0;  // read position
 
-static void wasm_outbox_write(const uint8_t *buf, int len)
+void wasm_outbox_write(const uint8_t *buf, int len)
 {
     for (int i = 0; i < len; i++) {
         uint32_t next = (wasm_outbox_head + 1) % WASM_OUTBOX_SIZE;
@@ -481,12 +481,10 @@ static int pebble_control_write(void *opaque, const uint8_t *buf, int len) {
         DPRINTF("%s: Sending packet of %d bytes to host (proto=0x%04x)\n",
                __func__, total_size, ntohs(hdr->protocol));
 #ifdef __EMSCRIPTEN__
-        if (!qemu_chr_fe_backend_connected(&s->chr)) {
-            // No chardev — write completed packet to WASM outbox for JS to read
-            wasm_outbox_write(s->send_char_buf, total_size);
-            pebble_control_consume_send_bytes(s, total_size);
-        } else
-#endif
+        // WASM: always write to outbox for JS bridge to read
+        wasm_outbox_write(s->send_char_buf, total_size);
+        pebble_control_consume_send_bytes(s, total_size);
+#else
         {
             while (total_size) {
                 bytes_sent = qemu_chr_fe_write_all(&s->chr, s->send_char_buf, total_size);
@@ -499,15 +497,15 @@ static int pebble_control_write(void *opaque, const uint8_t *buf, int len) {
                 pebble_control_consume_send_bytes(s, bytes_sent);
             }
         }
+#endif
 
     }
 
 #ifdef __EMSCRIPTEN__
-    if (!qemu_chr_fe_backend_connected(&s->chr)) {
-        return 0;
-    }
-#endif
+    return 0;
+#else
     return qemu_chr_fe_write_all(&s->chr, buf, len);
+#endif
 }
 
 
@@ -528,18 +526,15 @@ static void pebble_control_send_packet(PebbleControl *s, QemuProtocol protocol, 
   };
 
 #ifdef __EMSCRIPTEN__
-  if (!qemu_chr_fe_backend_connected(&s->chr)) {
-    // No chardev — write to WASM outbox
-    wasm_outbox_write((uint8_t *)&hdr, sizeof(hdr));
-    wasm_outbox_write(data, len);
-    wasm_outbox_write((uint8_t *)&footer, sizeof(footer));
-    return;
-  }
-#endif
-
+  // WASM: always write to outbox for JS bridge
+  wasm_outbox_write((uint8_t *)&hdr, sizeof(hdr));
+  wasm_outbox_write(data, len);
+  wasm_outbox_write((uint8_t *)&footer, sizeof(footer));
+#else
   qemu_chr_fe_write_all(&s->chr, (uint8_t *)&hdr, sizeof(hdr));
   qemu_chr_fe_write_all(&s->chr, data, len);
   qemu_chr_fe_write_all(&s->chr, (uint8_t *)&footer, sizeof(footer));
+#endif
 }
 
 // -----------------------------------------------------------------------------------
@@ -612,6 +607,27 @@ int pebble_control_wasm_readable(void)
     int avail = (int)wasm_outbox_head - (int)wasm_outbox_tail;
     if (avail < 0) avail += WASM_OUTBOX_SIZE;
     return avail;
+}
+#endif
+
+#ifdef __EMSCRIPTEN__
+// Defined in stm32_pebble_uart.c
+extern int stm32_uart_get_enable_state(Stm32Uart *s);
+
+// Diagnostic: returns bitmask of internal state for debugging.
+// Bits 0-3: pebble_control state, Bits 4-6: UART enable state
+int pebble_control_wasm_status(PebbleControl *s)
+{
+    int status = 1; // bit 0: exists
+    if (s->uart) status |= 2;
+    if (s->uart_chr_read) status |= 4;
+    if (s->target_send_timer) status |= 8;
+
+    // UART enable: bit4=UE, bit5=RE, bit6=TE
+    if (s->uart) {
+        status |= (stm32_uart_get_enable_state((Stm32Uart *)s->uart) << 4);
+    }
+    return status;
 }
 #endif
 

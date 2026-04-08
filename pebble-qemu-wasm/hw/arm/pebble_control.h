@@ -23,6 +23,8 @@ void pebble_control_inject(PebbleControl *s, const uint8_t *buf, int size);
 int pebble_control_wasm_read(uint8_t *buf, int max_len);
 /* Return number of bytes available in the WASM outbox. */
 int pebble_control_wasm_readable(void);
+/* Diagnostic: returns bitmask of internal state */
+int pebble_control_wasm_status(PebbleControl *s);
 #endif
 
 #endif /* PEBBLE_CONTROL_H */

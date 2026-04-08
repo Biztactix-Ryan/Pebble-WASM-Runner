@@ -321,6 +321,16 @@ void stm32_uart_set_write_handler(Stm32Uart *s, void *obj,
     s->chr_write = chr_write_handler;
 }
 
+/* Query UART enable state for diagnostics */
+int stm32_uart_get_enable_state(Stm32Uart *s)
+{
+    int state = 0;
+    if (s->USART_CR1_UE) state |= 1;
+    if (s->USART_CR1_RE) state |= 2;
+    if (s->USART_CR1_TE) state |= 4;
+    return state;
+}
+
 void stm32_uart_get_rcv_handlers(Stm32Uart *s, IOCanReadHandler **can_read,
                                   IOReadHandler **read, IOEventHandler **event)
 {
