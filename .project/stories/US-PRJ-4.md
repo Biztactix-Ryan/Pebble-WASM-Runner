@@ -17,7 +17,7 @@ tags:
 - mvp
 - testing
 title: Build and test emulator bridge end-to-end
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 As a developer, I want to verify the bridge works end-to-end by sending a known protocol message and receiving the expected response so that I can confidently build the installer on top of it.

@@ -16,7 +16,7 @@ status: backlog
 tags:
 - mvp
 title: Expose JS callback for receiving packets from emulator
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 As a developer, I want to register a JS callback that receives Pebble protocol packets coming out of the emulator (BEEF responses) so that the installer can handle acks, progress, errors, and completion signals.

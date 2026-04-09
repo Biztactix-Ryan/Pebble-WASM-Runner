@@ -8,7 +8,7 @@ tags:
 - mvp
 target_date: null
 title: Metadata Conversion
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Port the PBW manifest-to-install-metadata conversion logic from libpebble2 to JavaScript. The Pebble install protocol requires specific metadata fields (UUID, app name, version, flags, SDK version, etc.) in a binary format. This epic converts the parsed JSON manifest into the protocol-ready metadata structure.

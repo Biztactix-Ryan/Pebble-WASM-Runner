@@ -8,7 +8,7 @@ tags:
 - mvp
 target_date: null
 title: Install Flow Orchestrator
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Port the full Pebble app install sequence from libpebble2/services/install.py to JavaScript. This orchestrates the end-to-end install: inserting metadata, handling slot assignment from PebbleOS, then using PutBytes to send the app binary, resources, and worker in sequence.

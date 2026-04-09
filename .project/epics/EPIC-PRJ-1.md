@@ -9,7 +9,7 @@ tags:
 - foundation
 target_date: null
 title: Emulator Packet Bridge
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Extend pebble-qemu-wasm with a browser-callable control bridge. Expose JS functions to send raw FEED/BEEF protocol packets into the WASM QEMU emulator and receive response packets back. This is the foundation — every other component depends on being able to send/receive Pebble protocol messages.

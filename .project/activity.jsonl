@@ -553,3 +553,12 @@
 {"event_type":"update","item_id":"US-PRJ-15-25","item_type":"task","changes":{"status":{"before":"todo","after":"done"}},"timestamp":"2026-04-07T21:01:08.555714Z","actor":"Ryan Tregea","source":"cli"}
 {"event_type":"update","item_id":"US-PRJ-15-26","item_type":"task","changes":{"status":{"before":"todo","after":"done"},"points":{"before":3,"after":1}},"timestamp":"2026-04-07T21:01:09.460478Z","actor":"Ryan Tregea","source":"cli"}
 {"event_type":"update","item_id":"US-PRJ-15","item_type":"story","changes":{"status":{"before":"active","after":"done"}},"timestamp":"2026-04-07T21:01:14.655183Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-2","item_type":"story","changes":{},"timestamp":"2026-04-09T20:56:59.549099Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-3","item_type":"story","changes":{},"timestamp":"2026-04-09T20:56:59.795038Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"US-PRJ-4","item_type":"story","changes":{},"timestamp":"2026-04-09T20:56:59.895491Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-1","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:32.856738Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-2","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:33.163184Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-3","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:33.263831Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-4","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:33.413400Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-5","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:33.536469Z","actor":"Ryan Tregea","source":"cli"}
+{"event_type":"update","item_id":"EPIC-PRJ-6","item_type":"epic","changes":{},"timestamp":"2026-04-09T20:57:33.659441Z","actor":"Ryan Tregea","source":"cli"}

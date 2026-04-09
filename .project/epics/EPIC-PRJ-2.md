@@ -8,7 +8,7 @@ tags:
 - mvp
 target_date: null
 title: PBW File Parser
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Implement browser-side PBW file parsing. Let users pick a .pbw file, read it via the File API, unzip it with JSZip, and extract the manifest, app binary, resources, and worker binary into a structured JS object.

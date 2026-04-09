@@ -16,7 +16,7 @@ status: backlog
 tags:
 - mvp
 title: Expose JS-callable function to send packets into emulator
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 As a developer, I want a JS-callable function (e.g. sendPebblePacket(protocolId, payload)) that injects a Pebble protocol packet into the WASM emulator via the FEED/BEEF control channel so that the browser-side installer can communicate with PebbleOS.

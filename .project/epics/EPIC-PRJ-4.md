@@ -8,7 +8,7 @@ tags:
 - mvp
 target_date: null
 title: PutBytes Protocol Engine
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Port the PutBytes chunked binary transfer protocol from libpebble2/services/putbytes.py to JavaScript. This is the core transport for sending app binaries, resources, and worker binaries to PebbleOS. Implements the INIT → DATA (chunked) → COMMIT flow with proper ack handling.

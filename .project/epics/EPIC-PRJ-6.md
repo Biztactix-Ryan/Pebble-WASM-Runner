@@ -8,7 +8,7 @@ tags:
 - mvp
 target_date: null
 title: Browser UI
-updated: '2026-04-07'
+updated: '2026-04-09'
 ---
 
 Build a simple browser interface for the PBW installer integrated into the existing index.html. Provides file upload, metadata display, install button, progress feedback, and status messages.
