@@ -229,6 +229,7 @@
         <select id="fw-select">
             <option value="full" selected>Full PebbleOS</option>
             <option value="sdk">SDK PebbleOS</option>
+            <option value="robert">Full PebbleOS (Robert/F7)</option>
         </select>
         <button id="btn-boot">Boot</button>
         <span style="font-size: 12px; color: #888; margin-left: 8px;">May take 2-4 mins to boot</span>
@@ -482,7 +483,17 @@
 
         async function bootEmulator() {
             var variant = fwSelect.value;
-            var fwBase = ASSET_BASE + 'firmware/' + variant + '/';
+
+            // Robert uses emery firmware files but with F7 (robert-bb) machine
+            var fwBase = (variant === 'robert')
+                ? ASSET_BASE + 'firmware/full/'
+                : ASSET_BASE + 'firmware/' + variant + '/';
+
+            // Robert uses pebble-robert-bb (F7xx); all others use pebble-snowy-emery-bb (F4xx)
+            var machine = (variant === 'robert') ? 'pebble-robert-bb' : 'pebble-snowy-emery-bb';
+
+            // Update QEMU machine argument (Module.arguments[1])
+            Module.arguments[1] = machine;
 
             try {
                 setStatus('Fetching micro flash (' + variant + ')...');
@@ -1002,7 +1013,7 @@
                 var bridge = new EmulatorBridge(Module, { debug: true });
 
                 await installApp(bridge, parsedPBW, {
-                    timeout: 120000, // 2 min — WASM emulator is slow (~1 FPS)
+                    timeout: 600000, // 10 min — WASM emulator is slow (~1 FPS)
                     onProgress: function(phase, sent, total) {
                         var pct = total > 0 ? Math.round(sent / total * 100) : 0;
                         installProgressFill.style.width = pct + '%';

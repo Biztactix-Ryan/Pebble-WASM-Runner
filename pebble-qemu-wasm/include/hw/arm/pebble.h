@@ -115,6 +115,20 @@ void stm32f4xx_init(
             struct stm32f4xx *stm,
             ARMCPU **cpu);
 
+void stm32f7xx_init(
+            ram_addr_t flash_size,
+            ram_addr_t ram_size,
+            const char *kernel_filename,
+            Stm32Gpio **stm32_gpio,
+            const uint32_t *gpio_idr_masks,
+            Stm32Uart **stm32_uart,
+            Stm32Timer **stm32_timer,
+            DeviceState **stm32_rtc,
+            uint32_t osc_freq,
+            uint32_t osc32_freq,
+            struct stm32f7xx *stm,
+            ARMCPU **cpu);
+
 /* Board init functions */
 void pebble_32f412_init(MachineState *machine, const PblBoardConfig *board_config);
 void pebble_32f439_init(MachineState *machine, const PblBoardConfig *board_config);

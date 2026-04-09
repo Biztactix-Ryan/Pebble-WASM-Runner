@@ -82,6 +82,7 @@ patch_meson "${QEMU_SRC}/hw/arm/meson.build" "CONFIG_PEBBLE" \
   'pebble_silk.c',
   'pebble_control.c',
   'pebble_stm32f4xx_soc.c',
+  'pebble_stm32f7xx_soc.c',
 ))"
 
 # hw/misc/meson.build - RCC, clktree, common, EXTI, SYSCFG, ADC, PWR, CRC, flash, dummy, I2C

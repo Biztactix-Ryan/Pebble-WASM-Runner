@@ -635,7 +635,6 @@ int pebble_control_wasm_status(PebbleControl *s)
 // F7xx variant is not yet ported - stub for compilation
 PebbleControl *pebble_control_create_stm32f7xx(Chardev *chr, Stm32F7xxUart *uart)
 {
-    (void)chr;
-    (void)uart;
-    return NULL;
+    /* F7xx UART is register-compatible with F4xx — use the same implementation */
+    return pebble_control_create(chr, (Stm32Uart *)uart);
 }
